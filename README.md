@@ -1,4 +1,4 @@
-Some Game  
+Lego Star Wars III: The Clone Wars
 [![Build Status]][actions] [![Code Progress]][progress] [![Data Progress]][progress] [![Discord Badge]][discord]
 =============
 
