@@ -26,7 +26,7 @@ This repository does **not** contain any game assets or assembly whatsoever. An 
 
 Supported versions:
 
-- `GAMEID`: Rev 0 (USA)
+- `SC4E64`: Rev 0 (USA) (Debug)
 
 Dependencies
 ============
@@ -76,10 +76,10 @@ Building
 - Clone the repository:
 
   ```sh
-  git clone https://github.com/my/repo.git
+  git clone https://github.com/ThePlayerRolo/LegoCloneWarsWii.git
   ```
 
-- Copy your game's disc image to `orig/GAMEID`.
+- Copy your game's disc image to `orig/SC4E64`.
   - Supported formats: ISO (GCM), RVZ, WIA, WBFS, CISO, NFS, GCZ, TGC
   - After the initial build, the disc image can be deleted to save space.
 
@@ -89,7 +89,7 @@ Building
   python configure.py
   ```
 
-  To use a version other than `GAMEID` (USA), specify it with `--version`.
+  To use a version other than `SC4E64` (USA) (Debug), specify it with `--version`. (Currently not supported!)
 
 - Build:
 
