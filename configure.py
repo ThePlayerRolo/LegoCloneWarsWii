@@ -29,7 +29,7 @@ from tools.project import (
 # Game versions
 DEFAULT_VERSION = 0
 VERSIONS = [
-    "GAMEID",  # 0
+    "SC4E64",  # 0
 ]
 
 parser = argparse.ArgumentParser()
@@ -226,7 +226,7 @@ cflags_rel = [
     "-sdata2 0",
 ]
 
-config.linker_version = "GC/1.3.2"
+config.linker_version = "Wii/1.5"
 
 
 # Helper function for Dolphin libraries
