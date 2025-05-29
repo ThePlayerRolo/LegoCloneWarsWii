@@ -1,4 +1,4 @@
-Lego Star Wars III: The Clone Wars
+Lego Star Wars III: The Clone Wars Wii
 [![Build Status]][actions] [![Code Progress]][progress] [![Data Progress]][progress] [![Discord Badge]][discord]
 =============
 
@@ -20,7 +20,7 @@ Replace with your Discord server's ID and invite URL.
 [Discord Badge]: https://img.shields.io/discord/727908905392275526?color=%237289DA&logo=discord&logoColor=%23FFFFFF
 [discord]: https://discord.gg/hKx3FJJgrV
 
-A work-in-progress decompilation of Lego Star Wars III: The Clone Wars.
+A work-in-progress decompilation of Lego Star Wars III: The Clone Wars for Wii.
 
 This repository does **not** contain any game assets or assembly whatsoever. An existing copy of the game is required.
 
