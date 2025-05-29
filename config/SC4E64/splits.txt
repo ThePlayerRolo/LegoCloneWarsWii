@@ -2920,7 +2920,7 @@ runtime.ppceabi.h/__mem.cpp:
 runtime.ppceabi.h/__va_arg.cpp:
 	.text       start:0x80801E58 end:0x80801F20
 
-runtime.ppceabi.h/global_destructor_chain.cpp:
+runtime.ppceabi.h/global_destructor_chain.c:
 	.text       start:0x80801F20 end:0x80801F80
 	.sbss       start:0x808C68D8 end:0x808C68E0
 
@@ -2938,9 +2938,10 @@ runtime.ppceabi.h/runtime.cpp:
 	.rodata     start:0x8084B978 end:0x8084B990
 
 runtime.ppceabi.h/__init_cpp_exceptions.cpp:
-	.text       start:0x80802C40 end:0x80802CB0
+	.text       start:0x80802C40 end:0x80802C7C
 	.ctors      start:0x80813A80 end:0x80813A84
-	.dtors      start:0x80813D80 end:0x80813D88
+	.dtors      start:0x80813D80 end:0x80813D84
+	.dtors      start:0x80813D84 end:0x80813D88
 	.sdata      start:0x808C1C68 end:0x808C1C70
 
 runtime.ppceabi.h/Gecko_ExceptionPPC.cpp:
