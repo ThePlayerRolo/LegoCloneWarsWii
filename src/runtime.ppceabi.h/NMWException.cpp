@@ -30,8 +30,6 @@ public:
     }
 };
 
-extern "C" { 
-
 void __construct_array(void *pBlock, ctor_dtor_ptr ctor, ctor_dtor_ptr dtor, size_t size, size_t n) {
     __partial_array_destructor pad(pBlock, size, n, dtor);
 
@@ -69,10 +67,6 @@ void __destroy_arr(void *pArraySource, ctor_dtor_ptr dtor, size_t size, size_t n
         cur -= size;
         ((void (*)(void *, short))dtor)(cur,-1);
     }
-}
-
-
-
 }
 
 extern void __destroy_new_array3(void *block, ctor_dtor_ptr dtor, ctor_dtor_ptr headerDtor, int b) {
