@@ -247,7 +247,8 @@ config.libs = [
             Object(Matching, "runtime.ppceabi.h/GCN_mem_alloc.c", extra_cflags=["-O4"]),
             Object(Matching, "runtime.ppceabi.h/ptmf.c", extra_cflags=["-O4"]),
             Object(NonMatching, "runtime.ppceabi.h/runtime.c", extra_cflags=["-O3,s"]),
-            Object(Matching, "runtime.ppceabi.h/__mem.c", extra_cflags=["-O4,s"])
+            Object(Matching, "runtime.ppceabi.h/__mem.c", extra_cflags=["-O4,s"]),
+            Object(Matching, "runtime.ppceabi.h/NMWException.cpp", extra_cflags=["-O4"])
         ]
     },
     {
