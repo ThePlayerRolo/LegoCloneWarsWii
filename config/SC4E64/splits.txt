@@ -2952,324 +2952,324 @@ runtime.ppceabi.h/GCN_mem_alloc.cpp:
 	.text       start:0x80802D24 end:0x80802E94
 	.rodata     start:0x8084B990 end:0x8084BA00
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common\Src\alloc.c:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/Src/alloc.c:
 	.text       start:0x80802E94 end:0x80803C94
 	.rodata     start:0x8084BA00 end:0x8084BA18
 	.sbss       start:0x808C68E0 end:0x808C68E8
 	.bss        start:0x809BAB10 end:0x809BAB48
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common\Src\errno.c:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/Src/errno.c:
 	.sbss       start:0x808C68E8 end:0x808C68F0
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common\Src\ansi_files.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/Src/ansi_files.cpp:
 	.text       start:0x80803C94 end:0x80803F08
 	.data       start:0x808B93F0 end:0x808B9530
 	.bss        start:0x809BAB48 end:0x809BAE48
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common_Embedded\Src\ansi_fp.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Src/ansi_fp.cpp:
 	.text       start:0x80803F08 end:0x8080497C
 	.rodata     start:0x8084BA18 end:0x8084BAF8
 	.data       start:0x808B9530 end:0x808B9658
 	.sdata2     start:0x808CDF20 end:0x808CDF28
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common\Src\ctype.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/Src/ctype.cpp:
 	.rodata     start:0x8084BAF8 end:0x8084BEF8
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common\Src\locale.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/Src/locale.cpp:
 	.rodata     start:0x8084BEF8 end:0x8084C000
 	.data       start:0x808B9658 end:0x808B9850
 	.sdata2     start:0x808CDF28 end:0x808CDF40
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common\Src\arith.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/Src/arith.cpp:
 	.text       start:0x8080497C end:0x8080498C
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common\Src\buffer_io.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/Src/buffer_io.cpp:
 	.text       start:0x8080498C end:0x80804B9C
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common\Src\direct_io.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/Src/direct_io.cpp:
 	.text       start:0x80804B9C end:0x80804EA8
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common\Src\file_io.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/Src/file_io.cpp:
 	.text       start:0x80804EA8 end:0x80805360
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common\Src\FILE_POS.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/Src/FILE_POS.cpp:
 	.text       start:0x80805360 end:0x808055D4
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common\Src\mbstring.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/Src/mbstring.cpp:
 	.text       start:0x808055D4 end:0x808057CC
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common\Src\mem.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/Src/mem.cpp:
 	.text       start:0x808057CC end:0x8080593C
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common\Src\mem_funcs.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/Src/mem_funcs.cpp:
 	.text       start:0x8080593C end:0x80805C0C
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common\Src\math_api.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/Src/math_api.cpp:
 	.text       start:0x80805C0C end:0x80805CA0
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common\Src\misc_io.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/Src/misc_io.cpp:
 	.text       start:0x80805CA0 end:0x80805CC0
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common\Src\printf.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/Src/printf.cpp:
 	.text       start:0x80805CC0 end:0x80808184
 	.rodata     start:0x8084C000 end:0x8084C028
 	.data       start:0x808B9850 end:0x808B9A80
 	.sdata      start:0x808C1C70 end:0x808C1C78
 	.sdata2     start:0x808CDF40 end:0x808CDF48
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common\Src\wctype.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/Src/wctype.cpp:
 	.rodata     start:0x8084C028 end:0x8084C628
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common\Src\qsort.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/Src/qsort.cpp:
 	.text       start:0x80808184 end:0x808082F4
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common\Src\rand.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/Src/rand.cpp:
 	.text       start:0x808082F4 end:0x8080831C
 	.sdata      start:0x808C1C78 end:0x808C1C80
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common\Src\float.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/Src/float.cpp:
 	.sdata      start:0x808C1C80 end:0x808C1C84
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common\Src\scanf.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/Src/scanf.cpp:
 	.text       start:0x8080831C end:0x808083A4
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common\Src\string.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/Src/string.cpp:
 	.text       start:0x808083A4 end:0x808086A8
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common\Src\strtoul.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/Src/strtoul.cpp:
 	.text       start:0x808086A8 end:0x80808B80
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common\Src\wmem.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/Src/wmem.cpp:
 	.text       start:0x80808B80 end:0x80808BB0
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common\Src\wprintf.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/Src/wprintf.cpp:
 	.text       start:0x80808BB0 end:0x8080ACA8
 	.rodata     start:0x8084C628 end:0x8084C630
 	.data       start:0x808B9A80 end:0x808B9D20
 	.sdata2     start:0x808CDF48 end:0x808CDF50
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common\Src\wstring.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/Src/wstring.cpp:
 	.text       start:0x8080ACA8 end:0x8080AD84
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common\Src\wchar_io.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/Src/wchar_io.cpp:
 	.text       start:0x8080AD84 end:0x8080ADFC
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\PPC_EABI\SRC\uart_console_io_gcn.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/PPC_EABI/SRC/uart_console_io_gcn.cpp:
 	.text       start:0x8080ADFC end:0x8080AECC
 	.sbss       start:0x808C68F0 end:0x808C68F8
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\PPC_EABI\SRC\abort_exit_ppc_eabi.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/PPC_EABI/SRC/abort_exit_ppc_eabi.cpp:
 	.sbss       start:0x808C68F8 end:0x808C6900
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common\Src\secure_error.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/Src/secure_error.cpp:
 	.text       start:0x8080AECC end:0x8080AEE4
 	.sbss       start:0x808C6900 end:0x808C6908
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common_Embedded\Src\math_sun.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Src/math_sun.cpp:
 	.text       start:0x8080AEE4 end:0x8080AF24
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common_Embedded\Math\Double_precision\e_exp.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Math/Double_precision/e_exp.cpp:
 	.text       start:0x8080AF24 end:0x8080B154
 	.rodata     start:0x8084C630 end:0x8084C660
 	.sdata2     start:0x808CDF50 end:0x808CDFC8
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common_Embedded\Math\Double_precision\e_log.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Math/Double_precision/e_log.cpp:
 	.text       start:0x8080B154 end:0x8080B408
 	.sbss       start:0x808C6908 end:0x808C6910
 	.sdata2     start:0x808CDFC8 end:0x808CE048
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common_Embedded\Math\Double_precision\e_log10.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Math/Double_precision/e_log10.cpp:
 	.text       start:0x8080B408 end:0x8080B51C
 	.sbss       start:0x808C6910 end:0x808C6918
 	.sdata2     start:0x808CE048 end:0x808CE078
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common_Embedded\Math\Double_precision\e_pow.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Math/Double_precision/e_pow.cpp:
 	.text       start:0x8080B51C end:0x8080BD30
 	.rodata     start:0x8084C660 end:0x8084C690
 	.sdata2     start:0x808CE078 end:0x808CE188
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common_Embedded\Math\Double_precision\e_rem_pio2.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Math/Double_precision/e_rem_pio2.cpp:
 	.text       start:0x8080BD30 end:0x8080C0B4
 	.rodata     start:0x8084C690 end:0x8084C818
 	.sdata2     start:0x808CE188 end:0x808CE1E0
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common_Embedded\Math\Double_precision\k_cos.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Math/Double_precision/k_cos.cpp:
 	.text       start:0x8080C0B4 end:0x8080C1C4
 	.sdata2     start:0x808CE1E0 end:0x808CE228
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common_Embedded\Math\Double_precision\k_rem_pio2.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Math/Double_precision/k_rem_pio2.cpp:
 	.text       start:0x8080C1C4 end:0x8080D87C
 	.rodata     start:0x8084C818 end:0x8084C868
 	.sdata2     start:0x808CE228 end:0x808CE268
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common_Embedded\Math\Double_precision\k_sin.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Math/Double_precision/k_sin.cpp:
 	.text       start:0x8080D87C end:0x8080D93C
 	.sdata2     start:0x808CE268 end:0x808CE2A0
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common_Embedded\Math\Double_precision\k_tan.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Math/Double_precision/k_tan.cpp:
 	.text       start:0x8080D93C end:0x8080DB8C
 	.rodata     start:0x8084C868 end:0x8084C8D0
 	.sdata2     start:0x808CE2A0 end:0x808CE2D8
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common_Embedded\Math\Double_precision\s_atan.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Math/Double_precision/s_atan.cpp:
 	.text       start:0x8080DB8C end:0x8080DDBC
 	.rodata     start:0x8084C8D0 end:0x8084C968
 	.sdata2     start:0x808CE2D8 end:0x808CE300
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common_Embedded\Math\Double_precision\s_ceil.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Math/Double_precision/s_ceil.cpp:
 	.text       start:0x8080DDBC end:0x8080DF08
 	.sdata2     start:0x808CE300 end:0x808CE310
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common_Embedded\Math\Double_precision\s_copysign.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Math/Double_precision/s_copysign.cpp:
 	.text       start:0x8080DF08 end:0x8080DF34
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common_Embedded\Math\Double_precision\s_cos.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Math/Double_precision/s_cos.cpp:
 	.text       start:0x8080DF34 end:0x8080DFFC
 	.sdata2     start:0x808CE310 end:0x808CE318
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common_Embedded\Math\Double_precision\s_floor.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Math/Double_precision/s_floor.cpp:
 	.text       start:0x8080DFFC end:0x8080E14C
 	.sdata2     start:0x808CE318 end:0x808CE328
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common_Embedded\Math\Double_precision\s_frexp.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Math/Double_precision/s_frexp.cpp:
 	.text       start:0x8080E14C end:0x8080E1D4
 	.sdata2     start:0x808CE328 end:0x808CE330
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common_Embedded\Math\Double_precision\s_ldexp.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Math/Double_precision/s_ldexp.cpp:
 	.text       start:0x8080E1D4 end:0x8080E340
 	.sdata2     start:0x808CE330 end:0x808CE358
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common_Embedded\Math\Double_precision\s_sin.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Math/Double_precision/s_sin.cpp:
 	.text       start:0x8080E340 end:0x8080E40C
 	.sdata2     start:0x808CE358 end:0x808CE360
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common_Embedded\Math\Double_precision\s_tan.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Math/Double_precision/s_tan.cpp:
 	.text       start:0x8080E40C end:0x8080E484
 	.sdata2     start:0x808CE360 end:0x808CE368
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common_Embedded\Math\Double_precision\w_exp.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Math/Double_precision/w_exp.cpp:
 	.text       start:0x8080E484 end:0x8080E488
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common_Embedded\Math\Double_precision\w_log.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Math/Double_precision/w_log.cpp:
 	.text       start:0x8080E488 end:0x8080E48C
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common_Embedded\Math\Double_precision\w_log10.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Math/Double_precision/w_log10.cpp:
 	.text       start:0x8080E48C end:0x8080E490
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common_Embedded\Math\Double_precision\w_pow.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Math/Double_precision/w_pow.cpp:
 	.text       start:0x8080E490 end:0x8080E494
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common_Embedded\Math\Double_precision\e_sqrt.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Math/Double_precision/e_sqrt.cpp:
 	.text       start:0x8080E494 end:0x8080E6DC
 	.sdata2     start:0x808CE368 end:0x808CE370
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common_Embedded\Math\Double_precision\w_sqrt.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Math/Double_precision/w_sqrt.cpp:
 	.text       start:0x8080E6DC end:0x8080E6E0
 
-msl_c.ppceabi.bare.h\PowerPC_EABI_Support\MSL\MSL_C\MSL_Common\Src\extras.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/Src/extras.cpp:
 	.text       start:0x8080E6E0 end:0x8080E780
 
-TRK_Hollywood_Revolution\metrotrk\metrotrk\targsupp.cpp:
+TRK_Hollywood_Revolution/metrotrk/metrotrk/targsupp.cpp:
 	.text       start:0x8080E780 end:0x8080E7A0
 
-TRK_Hollywood_Revolution\metrotrk\metrotrk\custconn\cc_gdev.cpp:
+TRK_Hollywood_Revolution/metrotrk/metrotrk/custconn/cc_gdev.cpp:
 	.text       start:0x8080E7A0 end:0x8080EA08
 	.sbss       start:0x808C6918 end:0x808C6920
 	.bss        start:0x809BAE48 end:0x809BB368
 
-TRK_Hollywood_Revolution\metrotrk\metrotrk\custconn\MWCriticalSection_gc.cpp:
+TRK_Hollywood_Revolution/metrotrk/metrotrk/custconn/MWCriticalSection_gc.cpp:
 	.text       start:0x8080EA08 end:0x8080EA40
 
-TRK_Hollywood_Revolution\metrotrk\metrotrk\custconn\CircleBuffer.cpp:
+TRK_Hollywood_Revolution/metrotrk/metrotrk/custconn/CircleBuffer.cpp:
 	.text       start:0x8080EA40 end:0x8080EC74
 
-TRK_Hollywood_Revolution\metrotrk\metrotrk\flush_cache.cpp:
+TRK_Hollywood_Revolution/metrotrk/metrotrk/flush_cache.cpp:
 	.text       start:0x8080EC74 end:0x8080ECAC
 
-TRK_Hollywood_Revolution\metrotrk\metrotrk\main_TRK.cpp:
+TRK_Hollywood_Revolution/metrotrk/metrotrk/main_TRK.cpp:
 	.text       start:0x8080ECAC end:0x8080ECE8
 	.sbss       start:0x808C6920 end:0x808C6928
 
-TRK_Hollywood_Revolution\metrotrk\metrotrk\mainloop.cpp:
+TRK_Hollywood_Revolution/metrotrk/metrotrk/mainloop.cpp:
 	.text       start:0x8080ECE8 end:0x8080EDD4
 
-TRK_Hollywood_Revolution\metrotrk\metrotrk\mem_TRK.cpp:
+TRK_Hollywood_Revolution/metrotrk/metrotrk/mem_TRK.cpp:
 	.text       start:0x8080EDD4 end:0x8080F038
 
-TRK_Hollywood_Revolution\metrotrk\metrotrk\dispatch.cpp:
+TRK_Hollywood_Revolution/metrotrk/metrotrk/dispatch.cpp:
 	.text       start:0x8080F038 end:0x8080F158
 	.data       start:0x808B9D20 end:0x808B9D90
 
-TRK_Hollywood_Revolution\metrotrk\metrotrk\dolphin_trk.cpp:
+TRK_Hollywood_Revolution/metrotrk/metrotrk/dolphin_trk.cpp:
 	.text       start:0x8080F158 end:0x8080F47C
 	.data       start:0x808B9D90 end:0x808B9DD0
 	.sbss       start:0x808C6928 end:0x808C6930
 
-TRK_Hollywood_Revolution\metrotrk\metrotrk\dolphin_trk_glue.cpp:
+TRK_Hollywood_Revolution/metrotrk/metrotrk/dolphin_trk_glue.cpp:
 	.text       start:0x8080F47C end:0x8080F814
 	.data       start:0x808B9DD0 end:0x808B9EB8
 	.sbss       start:0x808C6930 end:0x808C6938
 	.sdata2     start:0x808CE370 end:0x808CE374
 	.bss        start:0x809BB368 end:0x809BB390
 
-TRK_Hollywood_Revolution\metrotrk\metrotrk\notify.cpp:
+TRK_Hollywood_Revolution/metrotrk/metrotrk/notify.cpp:
 	.text       start:0x8080F814 end:0x8080F8A4
 
-TRK_Hollywood_Revolution\metrotrk\metrotrk\nubevent.cpp:
+TRK_Hollywood_Revolution/metrotrk/metrotrk/nubevent.cpp:
 	.text       start:0x8080F8A4 end:0x8080FA40
 	.data       start:0x808B9EB8 end:0x808B9ED8
 	.bss        start:0x809BB390 end:0x809BB3B8
 
-TRK_Hollywood_Revolution\metrotrk\metrotrk\nubinit.cpp:
+TRK_Hollywood_Revolution/metrotrk/metrotrk/nubinit.cpp:
 	.text       start:0x8080FA40 end:0x8080FB90
 	.data       start:0x808B9ED8 end:0x808B9EF8
 	.sbss       start:0x808C6938 end:0x808C6940
 
-TRK_Hollywood_Revolution\metrotrk\metrotrk\serpoll.cpp:
+TRK_Hollywood_Revolution/metrotrk/metrotrk/serpoll.cpp:
 	.text       start:0x8080FB90 end:0x8080FCC8
 	.sbss       start:0x808C6940 end:0x808C6948
 
-TRK_Hollywood_Revolution\metrotrk\metrotrk\string_TRK.cpp:
+TRK_Hollywood_Revolution/metrotrk/metrotrk/string_TRK.cpp:
 	.text       start:0x8080FCC8 end:0x8080FCC8
 
-TRK_Hollywood_Revolution\metrotrk\metrotrk\support.cpp:
+TRK_Hollywood_Revolution/metrotrk/metrotrk/support.cpp:
 	.text       start:0x8080FCC8 end:0x808102EC
 	.data       start:0x808B9EF8 end:0x808B9F40
 
-TRK_Hollywood_Revolution\metrotrk\metrotrk\targcont.cpp:
+TRK_Hollywood_Revolution/metrotrk/metrotrk/targcont.cpp:
 	.text       start:0x808102EC end:0x80810320
 
-TRK_Hollywood_Revolution\metrotrk\metrotrk\mpc_7xx_603e.cpp:
+TRK_Hollywood_Revolution/metrotrk/metrotrk/mpc_7xx_603e.cpp:
 	.text       start:0x80810320 end:0x80810648
 
-TRK_Hollywood_Revolution\metrotrk\metrotrk\msg.cpp:
+TRK_Hollywood_Revolution/metrotrk/metrotrk/msg.cpp:
 	.text       start:0x80810648 end:0x808106AC
 	.data       start:0x808B9F40 end:0x808B9F68
 	.sbss       start:0x808C6948 end:0x808C6950
 
-TRK_Hollywood_Revolution\metrotrk\metrotrk\msgbuf.cpp:
+TRK_Hollywood_Revolution/metrotrk/metrotrk/msgbuf.cpp:
 	.text       start:0x808106AC end:0x80810EB8
 	.data       start:0x808B9F68 end:0x808B9F90
 	.bss        start:0x809BB3B8 end:0x809BCD60
 
-TRK_Hollywood_Revolution\metrotrk\metrotrk\msghndlr.cpp:
+TRK_Hollywood_Revolution/metrotrk/metrotrk/msghndlr.cpp:
 	.text       start:0x80810EB8 end:0x80811E3C
 	.data       start:0x808B9F90 end:0x808B9FF8
 	.sbss       start:0x808C6950 end:0x808C6958
 
-TRK_Hollywood_Revolution\metrotrk\metrotrk\mslsupp.cpp:
+TRK_Hollywood_Revolution/metrotrk/metrotrk/mslsupp.cpp:
 	.text       start:0x80811E3C end:0x80812254
 
-TRK_Hollywood_Revolution\metrotrk\metrotrk\targimpl.cpp:
+TRK_Hollywood_Revolution/metrotrk/metrotrk/targimpl.cpp:
 	.text       start:0x80812254 end:0x80813A68
 	.rodata     start:0x8084C968 end:0x8084C9F0
 	.data       start:0x808B9FF8 end:0x808BA008
 	.sbss       start:0x808C6958 end:0x808C6960
 	.bss        start:0x809BCD60 end:0x809BD308
 
-TRK_Hollywood_Revolution\metrotrk\metrotrk\target_options.cpp:
+TRK_Hollywood_Revolution/metrotrk/metrotrk/target_options.cpp:
 	.text       start:0x80813A68 end:0x80813A78
 	.sbss       start:0x808C6960 end:0x808C6964
 
-TRK_Hollywood_Revolution\metrotrk\metrotrk\__exception.cpp:
+TRK_Hollywood_Revolution/metrotrk/metrotrk/__exception.cpp:
 	.init       start:0x80004744 end:0x80006678
