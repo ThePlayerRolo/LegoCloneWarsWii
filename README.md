@@ -90,7 +90,7 @@ Building
   python configure.py
   ```
 
-  To use a version other than `SC4E64` (USA) (Debug), specify it with `--version`. (Currently not supported!)
+  To use a version other than `SC4E64` (USA) (Debug), specify it with `--version`.
 
 - Build:
 
