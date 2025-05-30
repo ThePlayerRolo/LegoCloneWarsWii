@@ -242,11 +242,12 @@ config.libs = [
         "lib": "Runtime.PPCEABI.H",
         "mw_version": config.linker_version,
         "cflags": cflags_runtime,
-        "progress_category": "sdk",
+        "progress_category": "runtime",
         "objects": [
             Object(Matching, "runtime.ppceabi.h/global_destructor_chain.c"),
             Object(Matching, "runtime.ppceabi.h/__init_cpp_exceptions.cpp"),
-            Object(Matching, "runtime.ppceabi.h/Gecko_ExceptionPPC.cpp")
+            Object(Matching, "runtime.ppceabi.h/Gecko_ExceptionPPC.cpp"),
+            Object(NonMatching, "runtime.ppceabi.h/runtime.c"),
         ]
     }
 ]
@@ -273,7 +274,7 @@ def link_order_callback(module_id: int, objects: List[str]) -> List[str]:
 # Adjust as desired for your project
 config.progress_categories = [
     ProgressCategory("game", "Game Code"),
-    ProgressCategory("sdk", "SDK Code"),
+    ProgressCategory("runtime", "Runtime Code"),
 ]
 config.progress_each_module = args.verbose
 # Optional extra arguments to `objdiff-cli report generate`

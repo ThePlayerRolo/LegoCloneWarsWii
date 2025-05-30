@@ -1,4 +1,4 @@
-#ifndef GLOABL_H
+#ifndef GLOBAL_H
     #define GLOBAL_H
 
     #include "types.h"
