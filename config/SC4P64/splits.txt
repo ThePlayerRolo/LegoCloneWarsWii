@@ -2933,7 +2933,7 @@ runtime.ppceabi.h/ptmf.cpp:
 	.text       start:0x8080236C end:0x808023C4
 	.rodata     start:0x8084B968 end:0x8084B978
 
-runtime.ppceabi.h/runtime.cpp:
+runtime.ppceabi.h/runtime.c:
 	.text       start:0x808023C4 end:0x80802C40
 	.rodata     start:0x8084B978 end:0x8084B990
 

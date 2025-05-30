@@ -1,24 +1,24 @@
-Lego Star Wars III: The Clone Wars Wii
-[![Build Status]][actions] [![Code Progress]][progress] [![Data Progress]][progress] [![Discord Badge]][discord]
+Lego Star Wars III: The Clone Wars Wii <br />
+[![Build Status]][actions] [![Code Progress]][Code Progress] [![Data Progress]][Data Progress] <!--[![Discord Badge]][discord]-->
 =============
 
 <!--
 Replace with your repository's URL.
 -->
-[Build Status]: https://github.com/zeldaret/tww/actions/workflows/build.yml/badge.svg
-[actions]: https://github.com/zeldaret/tww/actions/workflows/build.yml
+[Build Status]: https://github.com/ThePlayerRolo/LegoCloneWarsWii/actions/workflows/build.yml/badge.svg
+[actions]: https://github.com/ThePlayerRolo/LegoCloneWarsWii/actions/workflows/build.yml
 <!--
 decomp.dev progress badges
 See https://decomp.dev/api for an API overview.
 -->
-[Code Progress]: https://decomp.dev/zeldaret/tww.svg?mode=shield&measure=code&label=Code
-[Data Progress]: https://decomp.dev/zeldaret/tww.svg?mode=shield&measure=data&label=Data
-[progress]: https://decomp.dev/zeldaret/tww
+[Code Progress]: https://decomp.dev/ThePlayerRolo/LegoCloneWarsWii.svg?mode=shield&measure=code&label=Code
+[Data Progress]: https://decomp.dev/ThePlayerRolo/LegoCloneWarsWii.svg?mode=shield&measure=data&label=Data
+[progress]: https://decomp.dev/ThePlayerRolo/LegoCloneWarsWii
 <!--
 Replace with your Discord server's ID and invite URL.
 -->
-[Discord Badge]: https://img.shields.io/discord/727908905392275526?color=%237289DA&logo=discord&logoColor=%23FFFFFF
-[discord]: https://discord.gg/hKx3FJJgrV
+[Discord Badge]: https://img.shields.io/discord/GUILD_ID?color=%237289DA&logo=discord&logoColor=%23FFFFFF
+[discord]: https://discord.gg/CODE
 
 A work-in-progress decompilation of Lego Star Wars III: The Clone Wars for Wii.
 
