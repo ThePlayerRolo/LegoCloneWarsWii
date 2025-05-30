@@ -198,7 +198,7 @@ cflags_base = [
     "-fp_contract on",
     "-str reuse",
     "-enc SJIS",
-    "-i src",
+    "-i include",
     f"-i build/{config.version}/include",
     f"-DBUILD_VERSION={version_num}",
     f"-DVERSION_{config.version}",
@@ -228,7 +228,7 @@ cflags_rel = [
     "-sdata2 0",
 ]
 
-config.linker_version = "Wii/1.5"
+config.linker_version = "Wii/1.0"
 
 
 Matching = True                   # Object matches and should be linked
@@ -248,7 +248,7 @@ config.libs = [
             Object(Matching, "runtime.ppceabi.h/global_destructor_chain.c"),
             Object(Matching, "runtime.ppceabi.h/__init_cpp_exceptions.cpp"),
             Object(Matching, "runtime.ppceabi.h/Gecko_ExceptionPPC.cpp"),
-            Object(NonMatching, "runtime.ppceabi.h/runtime.c"),
+            Object(Matching, "runtime.ppceabi.h/__va_arg.c"),
         ]
     }
 ]

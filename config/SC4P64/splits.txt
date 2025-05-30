@@ -2913,11 +2913,11 @@ esp/esp.cpp:
 cx/CXUncompression.cpp:
 	.text       start:0x80801CB0 end:0x80801E3C
 
-runtime.ppceabi.h/__mem.cpp:
+runtime.ppceabi.h/__mem.c:
 	.init       start:0x800043C4 end:0x80004744
 	.text       start:0x80801E3C end:0x80801E58
 
-runtime.ppceabi.h/__va_arg.cpp:
+runtime.ppceabi.h/__va_arg.c:
 	.text       start:0x80801E58 end:0x80801F20
 
 runtime.ppceabi.h/global_destructor_chain.c:
