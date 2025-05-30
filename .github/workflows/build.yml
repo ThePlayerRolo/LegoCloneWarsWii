@@ -8,7 +8,7 @@ jobs:
   build:
     # This is a *private* build container.
     # See docs/github_actions.md for more information.
-    container: ghcr.io/ThePlayerRolo/LegoCloneWarsWii-build13:main
+    container: ghcr.io/theplayerrolo/legoclonewarswii-build13:main
 
     runs-on: ubuntu-latest
     strategy:
