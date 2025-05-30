@@ -1,4 +1,4 @@
-/* Originally from Petari: https://github.com/SMGCommunity/Petari */
+/* Originally from Petari: https://github.com/SMGCommunity/Petari/blob/master/src/Runtime/GCN_mem_alloc.c */
 extern void OSReport(const char *, ...);
 extern void* OSGetMEM1ArenaLo();
 extern void* OSGetMEM1ArenaHi();

@@ -2929,7 +2929,7 @@ runtime.ppceabi.h/NMWException.cpp:
 	extabindex  start:0x80006780 end:0x800067BC
 	.text       start:0x80801F80 end:0x8080236C
 
-runtime.ppceabi.h/ptmf.cpp:
+runtime.ppceabi.h/ptmf.c:
 	.text       start:0x8080236C end:0x808023C4
 	.rodata     start:0x8084B968 end:0x8084B978
 
