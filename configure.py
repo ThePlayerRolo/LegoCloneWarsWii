@@ -188,7 +188,6 @@ cflags_base = [
     "-Cpp_exceptions off",
     "-func_align 4",
     # "-W all",
-    "-O4,s",
     "-inline auto",
     '-pragma "cats off"',
     '-pragma "warn_notinlined off"',
@@ -245,10 +244,11 @@ config.libs = [
         "cflags": cflags_runtime,
         "progress_category": "runtime",
         "objects": [
-            Object(Matching, "runtime.ppceabi.h/global_destructor_chain.c"),
-            Object(Matching, "runtime.ppceabi.h/__init_cpp_exceptions.cpp"),
-            Object(Matching, "runtime.ppceabi.h/Gecko_ExceptionPPC.cpp"),
-            Object(Matching, "runtime.ppceabi.h/__va_arg.c"),
+            Object(Matching, "runtime.ppceabi.h/global_destructor_chain.c",  extra_cflags=["-O4"]),
+            Object(Matching, "runtime.ppceabi.h/__init_cpp_exceptions.cpp",  extra_cflags=["-O4"]),
+            Object(NonMatching, "runtime.ppceabi.h/Gecko_ExceptionPPC.cpp",  extra_cflags=["-O4,s"]),
+            Object(Matching, "runtime.ppceabi.h/__va_arg.c",  extra_cflags=["-O4"]),
+            Object(NonMatching, "runtime.ppceabi.h/GCN_mem_alloc.c", extra_cflags=["-O4,p"]),
         ]
     }
 ]

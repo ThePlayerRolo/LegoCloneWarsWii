@@ -2948,7 +2948,7 @@ runtime.ppceabi.h/Gecko_ExceptionPPC.cpp:
 	.text       start:0x80802CB0 end:0x80802D24
 	.bss        start:0x809BA990 end:0x809BAB10
 
-runtime.ppceabi.h/GCN_mem_alloc.cpp:
+runtime.ppceabi.h/GCN_mem_alloc.c:
 	.text       start:0x80802D24 end:0x80802E94
 	.rodata     start:0x8084B990 end:0x8084BA00
 

@@ -111,5 +111,6 @@ Select an object from the left sidebar to begin diffing. Changes to the project 
 
 Credits
 ============
-Runtime Code Has Been Used With Permission From These Repositories:
+Runtime and SDK code has been used  from these Repositories:
 - [Alice In Wonderland Decompilation](https://github.com/Alice-2010/Decomp)
+- [Super Mario Galaxy Decompilation](https://github.com/SMGCommunity/Petari)
