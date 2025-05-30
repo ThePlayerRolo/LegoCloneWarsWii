@@ -250,6 +250,7 @@ config.libs = [
             Object(Matching, "runtime.ppceabi.h/__va_arg.c",  extra_cflags=["-O4"]),
             Object(NonMatching, "runtime.ppceabi.h/GCN_mem_alloc.c", extra_cflags=["-O4"]),
             Object(Matching, "runtime.ppceabi.h/ptmf.c", extra_cflags=["-O4"]),
+            Object(Matching, "runtime.ppceabi.h/runtime.c", extra_cflags=["-O3,s"]),
         ]
     },
     {

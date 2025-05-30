@@ -1,11 +1,5 @@
 /* Originally from Petari: https://github.com/SMGCommunity/Petari/blob/master/src/Runtime/GCN_mem_alloc.c */
-extern void OSReport(const char *, ...);
-extern void* OSGetMEM1ArenaLo();
-extern void* OSGetMEM1ArenaHi();
-extern void* OSInitAlloc(void *, void *, int);
-extern volatile int __OSCurrHeap;
-#define OSRoundUp32B(x) (((unsigned int)(x) + 32 - 1) & ~(32 - 1))
-#define OSRoundDown32B(x) (((unsigned int)(x)) & ~(32 - 1))
+#include "runtime.ppceabi.h/GCN_mem_alloc.h"
 
 
 
