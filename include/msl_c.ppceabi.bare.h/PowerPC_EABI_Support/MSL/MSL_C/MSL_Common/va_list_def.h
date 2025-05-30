@@ -1,6 +1,8 @@
 #ifndef _MSL_VA_LIST_DEF_H
     #define _MSL_VA_LIST_DEF_H
 
+    #include "types.h"
+
     #ifdef __cplusplus
         extern "C" {
     #endif

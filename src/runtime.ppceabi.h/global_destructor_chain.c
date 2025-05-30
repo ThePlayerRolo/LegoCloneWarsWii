@@ -1,7 +1,5 @@
 #include "runtime.ppceabi.h/global_destructor_chain.h"
 
-
-
 DtorLink* __global_destructor_chain;
 
 void* __register_global_object(void* object, DtorFunction dtor, DtorLink* link) {

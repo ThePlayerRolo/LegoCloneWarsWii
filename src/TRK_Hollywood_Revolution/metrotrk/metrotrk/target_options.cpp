@@ -2,10 +2,12 @@
 
 u8 bUseSerialIO;
 
-void SetUseSerialIO(u8 b) {
+void SetUseSerialIO(u8 b)
+{
     bUseSerialIO = b;
 }
 
-u8 GetUseSerialIO() {
+u8 GetUseSerialIO()
+{
     return bUseSerialIO;
 }

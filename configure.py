@@ -220,13 +220,6 @@ cflags_runtime = [
     "-inline auto",
 ]
 
-# REL flags
-cflags_rel = [
-    *cflags_base,
-    "-sdata 0",
-    "-sdata2 0",
-]
-
 config.linker_version = "Wii/1.0"
 
 
@@ -241,7 +234,10 @@ config.libs = [
     {
         "lib": "Runtime.PPCEABI.H",
         "mw_version": config.linker_version,
-        "cflags": cflags_runtime,
+        "cflags": [
+            *cflags_runtime,
+            "-lang=c99"
+        ],
         "progress_category": "runtime",
         "objects": [
             Object(Matching, "runtime.ppceabi.h/global_destructor_chain.c",  extra_cflags=["-O4"]),
@@ -251,6 +247,7 @@ config.libs = [
             Object(NonMatching, "runtime.ppceabi.h/GCN_mem_alloc.c", extra_cflags=["-O4"]),
             Object(Matching, "runtime.ppceabi.h/ptmf.c", extra_cflags=["-O4"]),
             Object(NonMatching, "runtime.ppceabi.h/runtime.c", extra_cflags=["-O3,s"]),
+            Object(Matching, "runtime.ppceabi.h/__mem.c")
         ]
     },
     {

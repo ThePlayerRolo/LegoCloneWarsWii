@@ -1,8 +1,8 @@
 #ifndef TYPES_H
     #define TYPES_H
 
-    #include "macros.h"
-    #include "msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/stddef.h"
+    #include "macros.h"  /* IWYU pragma: export */
+    #include "msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/stddef.h"  /* IWYU pragma: export */
 
     typedef int BOOL;
 

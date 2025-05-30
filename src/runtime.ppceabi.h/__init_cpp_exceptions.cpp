@@ -1,6 +1,6 @@
 #include "runtime.ppceabi.h/global_destructor_chain.h"
 #include "runtime.ppceabi.h/__init_cpp_exceptions.h"
-#include "runtime.ppceabi.h/__ppc_eabi_linker.h"
+#include "runtime.ppceabi.h/__ppc_eabi_linker.h"  /* IWYU pragma: export */
 #include "runtime.ppceabi.h/Gecko_ExceptionPPC.h"
 
 static s32 fragmentID = -2;
