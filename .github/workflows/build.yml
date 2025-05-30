@@ -8,14 +8,14 @@ jobs:
   build:
     # This is a *private* build container.
     # See docs/github_actions.md for more information.
-    container: ghcr.io/my/game-build:main
+    container: ghcr.io/ThePlayerRolo/LegoCloneWarsWii-build13:main
 
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
         # Add game versions here
-        version: [GAMEID]
+        version: [SC4E64, SC4P64]
 
     steps:
     # Checkout the repository
