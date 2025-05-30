@@ -112,4 +112,4 @@ Select an object from the left sidebar to begin diffing. Changes to the project 
 Credits
 ============
 Runtime Code Has Been Used With Permission From These Repositories:
-[Alice In Wonderland Decompilation](https://github.com/Alice-2010/Decomp)
+- [Alice In Wonderland Decompilation](https://github.com/Alice-2010/Decomp)
