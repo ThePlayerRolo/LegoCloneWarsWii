@@ -250,6 +250,15 @@ config.libs = [
             Object(Matching, "runtime.ppceabi.h/Gecko_ExceptionPPC.cpp"),
             Object(Matching, "runtime.ppceabi.h/__va_arg.c"),
         ]
+    },
+    {
+        "lib": "TRK_Hollywood_Revolution",
+        "mw_version": config.linker_version,
+        "cflags": cflags_runtime,
+        "progress_category": "trk",
+        "objects": [
+            Object(NonMatching, "TRK_Hollywood_Revolution/metrotrk/metrotrk/target_options.cpp"),
+        ]
     }
 ]
 
@@ -276,6 +285,7 @@ def link_order_callback(module_id: int, objects: List[str]) -> List[str]:
 config.progress_categories = [
     ProgressCategory("game", "Game Code"),
     ProgressCategory("runtime", "Runtime Code"),
+    ProgressCategory("trk", "MetroTRK Code")
 ]
 config.progress_each_module = args.verbose
 # Optional extra arguments to `objdiff-cli report generate`
