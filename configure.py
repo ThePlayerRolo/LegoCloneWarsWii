@@ -257,7 +257,7 @@ config.libs = [
         "cflags": cflags_runtime,
         "progress_category": "trk",
         "objects": [
-            Object(NonMatching, "TRK_Hollywood_Revolution/metrotrk/metrotrk/target_options.cpp"),
+            Object(Matching, "TRK_Hollywood_Revolution/metrotrk/metrotrk/target_options.cpp"),
         ]
     }
 ]
