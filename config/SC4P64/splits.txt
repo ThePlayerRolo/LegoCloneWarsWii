@@ -13,7 +13,7 @@ Sections:
 	.sbss2      type:bss align:16
 	.bss        type:bss align:128
 
-!clonewars_Lump!.cpp:
+clonewars_Lump.cpp:
 	.text       start:0x800067E0 end:0x800A2880
 	.ctors      start:0x80813A84 end:0x80813A88
 	.rodata     start:0x80813DA0 end:0x808197F0
@@ -23,7 +23,7 @@ Sections:
 	.sdata2     start:0x808C6980 end:0x808C6EE0
 	.bss        start:0x808CE400 end:0x808CFC50
 
-modules.master/!modules_Lump!.cpp:
+modules.master/modules_Lump.cpp:
 	.text       start:0x800A2880 end:0x80142378
 	.ctors      start:0x80813A88 end:0x80813A8C
 	.rodata     start:0x808197F0 end:0x8081B5B0
@@ -33,7 +33,7 @@ modules.master/!modules_Lump!.cpp:
 	.sdata2     start:0x808C6EE0 end:0x808C7388
 	.bss        start:0x808CFC50 end:0x808D1050
 
-rts.master/!rts_Lump!.cpp:
+rts.master/rts_Lump.cpp:
 	.text       start:0x80142378 end:0x801B1020
 	.ctors      start:0x80813A8C end:0x80813A90
 	.rodata     start:0x8081B5B0 end:0x8081E8E0
@@ -43,7 +43,7 @@ rts.master/!rts_Lump!.cpp:
 	.sdata2     start:0x808C7388 end:0x808C7808
 	.bss        start:0x808D1050 end:0x808D12E0
 
-nufile.master/!nufile_Lump!.cpp:
+nufile.master/nufile_Lump.cpp:
 	.text       start:0x801B1020 end:0x801BD570
 	.ctors      start:0x80813A90 end:0x80813A94
 	.rodata     start:0x8081E8E0 end:0x8081ECF0
@@ -53,7 +53,7 @@ nufile.master/!nufile_Lump!.cpp:
 	.sdata2     start:0x808C7808 end:0x808C7848
 	.bss        start:0x808D12E0 end:0x808E6930
 
-numath.master/!numath_Lump!.cpp:
+numath.master/numath_Lump.cpp:
 	.text       start:0x801BD570 end:0x801C69DC
 	.ctors      start:0x80813A94 end:0x80813A98
 	.rodata     start:0x8081ECF0 end:0x8081ED08
@@ -63,7 +63,7 @@ numath.master/!numath_Lump!.cpp:
 	.sdata2     start:0x808C7848 end:0x808C7A58
 	.bss        start:0x808E6930 end:0x808E6E20
 
-nucore.master/!nucore_Lump!.cpp:
+nucore.master/nucore_Lump.cpp:
 	.text       start:0x801C69DC end:0x801E9A20
 	.ctors      start:0x80813A98 end:0x80813A9C
 	.rodata     start:0x8081ED08 end:0x80820100
@@ -73,7 +73,7 @@ nucore.master/!nucore_Lump!.cpp:
 	.sdata2     start:0x808C7A58 end:0x808C7C28
 	.bss        start:0x808E6E20 end:0x808FCFE0
 
-nunet.master/!nunet_Lump!.cpp:
+nunet.master/nunet_Lump.cpp:
 	.text       start:0x801E9A20 end:0x801EA9E0
 	.rodata     start:0x80820100 end:0x80820128
 	.sdata      start:0x808BC5D8 end:0x808BC5E0
@@ -515,7 +515,7 @@ nu3d.master/nuwaterdistortion_wii.cpp:
 	.sdata2     start:0x808C82E8 end:0x808C8308
 	.bss        start:0x8090BFD0 end:0x8090BFF0
 
-nusound.master/!nusound_Lump!.cpp:
+nusound.master/nusound_Lump.cpp:
 	.text       start:0x802726B0 end:0x8027A2D0
 	.ctors      start:0x80813B00 end:0x80813B04
 	.rodata     start:0x80820960 end:0x80821010
@@ -525,12 +525,12 @@ nusound.master/!nusound_Lump!.cpp:
 	.sdata2     start:0x808C8308 end:0x808C83A0
 	.bss        start:0x8090BFF0 end:0x8090C758
 
-numesh.master/!numesh_Lump!.cpp:
+numesh.master/numesh_Lump.cpp:
 	.text       start:0x8027A2D0 end:0x8027C710
 	.sdata      start:0x808BCC20 end:0x808BCC58
 	.sdata2     start:0x808C83A0 end:0x808C83A8
 
-nufmv.master/!nufmv_Lump!.cpp:
+nufmv.master/nufmv_Lump.cpp:
 	.text       start:0x8027C710 end:0x80282850
 	.ctors      start:0x80813B04 end:0x80813B08
 	.rodata     start:0x80821010 end:0x80821640
@@ -540,7 +540,7 @@ nufmv.master/!nufmv_Lump!.cpp:
 	.sdata2     start:0x808C83A8 end:0x808C8438
 	.bss        start:0x8090C758 end:0x8090C788
 
-chroma.master/!chroma_Lump!.cpp:
+chroma.master/chroma_Lump.cpp:
 	.text       start:0x80282850 end:0x8028506C
 	.rodata     start:0x80821640 end:0x80821678
 	.data       start:0x808686A0 end:0x80868938
@@ -548,7 +548,7 @@ chroma.master/!chroma_Lump!.cpp:
 	.sdata2     start:0x808C8438 end:0x808C8440
 	.bss        start:0x8090C788 end:0x8090C798
 
-nuwii.master/!nuwii_Lump!.cpp:
+nuwii.master/nuwii_Lump.cpp:
 	.text       start:0x8028506C end:0x8028BA20
 	.ctors      start:0x80813B08 end:0x80813B0C
 	.rodata     start:0x80821678 end:0x80822378
@@ -558,7 +558,7 @@ nuwii.master/!nuwii_Lump!.cpp:
 	.sdata2     start:0x808C8440 end:0x808C8510
 	.bss        start:0x8090C798 end:0x8090DD10
 
-charsys.master/!charsys_Lump!.cpp:
+charsys.master/charsys_Lump.cpp:
 	.text       start:0x8028BA20 end:0x802BA430
 	.ctors      start:0x80813B0C end:0x80813B10
 	.rodata     start:0x80822378 end:0x80823970
@@ -568,7 +568,7 @@ charsys.master/!charsys_Lump!.cpp:
 	.sdata2     start:0x808C8510 end:0x808C8778
 	.bss        start:0x8090DD10 end:0x80915E98
 
-coreobjects.master/!coreobjects_Lump!.cpp:
+coreobjects.master/coreobjects_Lump.cpp:
 	.text       start:0x802BA430 end:0x802C1FDC
 	.ctors      start:0x80813B10 end:0x80813B14
 	.rodata     start:0x80823970 end:0x80823DC8
@@ -578,7 +578,7 @@ coreobjects.master/!coreobjects_Lump!.cpp:
 	.sdata2     start:0x808C8778 end:0x808C87C8
 	.bss        start:0x80915E98 end:0x80916358
 
-edlevel.master/!edlevel_Lump!.cpp:
+edlevel.master/edlevel_Lump.cpp:
 	.text       start:0x802C1FDC end:0x802FEFA0
 	.ctors      start:0x80813B14 end:0x80813B18
 	.rodata     start:0x80823DC8 end:0x808257C0
@@ -588,14 +588,14 @@ edlevel.master/!edlevel_Lump!.cpp:
 	.sdata2     start:0x808C87C8 end:0x808C88E0
 	.bss        start:0x80916358 end:0x80917240
 
-edtools.master/!edtools_Lump!.cpp:
+edtools.master/edtools_Lump.cpp:
 	.text       start:0x802FEFA0 end:0x802FF7F0
 	.ctors      start:0x80813B18 end:0x80813B1C
 	.sdata      start:0x808BD600 end:0x808BD608
 	.sbss       start:0x808C3158 end:0x808C3198
 	.bss        start:0x80917240 end:0x809182C0
 
-gui.master/!gui_Lump!.cpp:
+gui.master/gui_Lump.cpp:
 	.text       start:0x802FF7F0 end:0x8031E860
 	.ctors      start:0x80813B1C end:0x80813B20
 	.rodata     start:0x808257C0 end:0x80827118
@@ -605,7 +605,7 @@ gui.master/!gui_Lump!.cpp:
 	.sdata2     start:0x808C88E0 end:0x808C8B40
 	.bss        start:0x809182C0 end:0x8091AB70
 
-audio.master/!audio_Lump!.cpp:
+audio.master/audio_Lump.cpp:
 	.text       start:0x8031E860 end:0x80329FB8
 	.ctors      start:0x80813B20 end:0x80813B24
 	.rodata     start:0x80827118 end:0x808276C0
@@ -615,7 +615,7 @@ audio.master/!audio_Lump!.cpp:
 	.sdata2     start:0x808C8B40 end:0x808C8BA0
 	.bss        start:0x8091AB70 end:0x8091B230
 
-ai.master/!ai_Lump!.cpp:
+ai.master/ai_Lump.cpp:
 	.text       start:0x80329FB8 end:0x803905DC
 	.ctors      start:0x80813B24 end:0x80813B28
 	.rodata     start:0x808276C0 end:0x808294E0
@@ -625,7 +625,7 @@ ai.master/!ai_Lump!.cpp:
 	.sdata2     start:0x808C8BA0 end:0x808C8EB0
 	.bss        start:0x8091B230 end:0x8091C0A0
 
-effects.master/!effects_Lump!.cpp:
+effects.master/effects_Lump.cpp:
 	.text       start:0x803905DC end:0x803C17E0
 	.ctors      start:0x80813B28 end:0x80813B2C
 	.rodata     start:0x808294E0 end:0x8082A7B8
@@ -635,7 +635,7 @@ effects.master/!effects_Lump!.cpp:
 	.sdata2     start:0x808C8EB0 end:0x808C9070
 	.bss        start:0x8091C0A0 end:0x809282E0
 
-cutscene.master/!cutscene_Lump!.cpp:
+cutscene.master/cutscene_Lump.cpp:
 	.text       start:0x803C17E0 end:0x803C9D50
 	.ctors      start:0x80813B2C end:0x80813B30
 	.rodata     start:0x8082A7B8 end:0x8082A8F8
@@ -645,7 +645,7 @@ cutscene.master/!cutscene_Lump!.cpp:
 	.sdata2     start:0x808C9070 end:0x808C90D8
 	.bss        start:0x809282E0 end:0x80928500
 
-gameframework.master/!gameframework_Lump!.cpp:
+gameframework.master/gameframework_Lump.cpp:
 	.text       start:0x803C9D50 end:0x803E1474
 	.ctors      start:0x80813B30 end:0x80813B34
 	.rodata     start:0x8082A8F8 end:0x8082B6F0
@@ -655,7 +655,7 @@ gameframework.master/!gameframework_Lump!.cpp:
 	.sdata2     start:0x808C90D8 end:0x808C91D0
 	.bss        start:0x80928500 end:0x80928AB0
 
-support.master/!support_Lump!.cpp:
+support.master/support_Lump.cpp:
 	.text       start:0x803E1474 end:0x803ECAA4
 	.ctors      start:0x80813B34 end:0x80813B38
 	.rodata     start:0x8082B6F0 end:0x8082B880
@@ -665,7 +665,7 @@ support.master/!support_Lump!.cpp:
 	.sdata2     start:0x808C91D0 end:0x808C92E8
 	.bss        start:0x80928AB0 end:0x80928B28
 
-splitscreen.master/!splitscreen_Lump!.cpp:
+splitscreen.master/splitscreen_Lump.cpp:
 	.text       start:0x803ECAA4 end:0x804097C0
 	.ctors      start:0x80813B38 end:0x80813B3C
 	.rodata     start:0x8082B880 end:0x8082B960
@@ -1768,7 +1768,7 @@ legogame.master/target_wii.cpp:
 	.sdata2     start:0x808CD908 end:0x808CD910
 	.bss        start:0x809366D0 end:0x80936750
 
-dynosdk.master/!dynosdk_Lump!.cpp:
+dynosdk.master/dynosdk_Lump.cpp:
 	.text       start:0x8070EB60 end:0x80756770
 	.ctors      start:0x80813D50 end:0x80813D54
 	.rodata     start:0x8084A7C0 end:0x8084A9A8
