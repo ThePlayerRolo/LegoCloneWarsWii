@@ -114,3 +114,4 @@ Credits
 Runtime and SDK code has been used  from these Repositories:
 - [Alice In Wonderland Decompilation](https://github.com/Alice-2010/Decomp)
 - [Super Mario Galaxy Decompilation](https://github.com/SMGCommunity/Petari)
+- [Rock Band 3 Decompilation](https://github.com/DarkRTA/rb3)
