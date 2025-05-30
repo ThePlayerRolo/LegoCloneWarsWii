@@ -246,9 +246,9 @@ config.libs = [
         "objects": [
             Object(Matching, "runtime.ppceabi.h/global_destructor_chain.c",  extra_cflags=["-O4"]),
             Object(Matching, "runtime.ppceabi.h/__init_cpp_exceptions.cpp",  extra_cflags=["-O4"]),
-            Object(NonMatching, "runtime.ppceabi.h/Gecko_ExceptionPPC.cpp",  extra_cflags=["-O4,s"]),
+            Object(Matching, "runtime.ppceabi.h/Gecko_ExceptionPPC.cpp",  extra_cflags=["-O4,s"]),
             Object(Matching, "runtime.ppceabi.h/__va_arg.c",  extra_cflags=["-O4"]),
-            Object(NonMatching, "runtime.ppceabi.h/GCN_mem_alloc.c", extra_cflags=["-O4,p"]),
+            Object(NonMatching, "runtime.ppceabi.h/GCN_mem_alloc.c", extra_cflags=["-O4"]),
         ]
     },
     {
