@@ -5,6 +5,3 @@ object: sys/main.dol
 hash: 2a942004e921780a69adb1eaa66c0220684812e2
 symbols: config/SC4E64/symbols.txt
 splits: config/SC4E64/splits.txt
-# Change this to match the linker version.
-# See config.example.yml for a list.
-mw_comment_version: 14

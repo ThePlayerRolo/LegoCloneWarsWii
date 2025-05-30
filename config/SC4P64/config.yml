@@ -1,0 +1,7 @@
+# See config.example.yml for documentation.
+object_base: orig/SC4P64
+extract_objects: true
+object: sys/main.dol
+hash: 2a942004e921780a69adb1eaa66c0220684812e2
+symbols: config/SC4P64/symbols.txt
+splits: config/SC4P64/splits.txt

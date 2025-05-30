@@ -27,6 +27,7 @@ This repository does **not** contain any game assets or assembly whatsoever. An 
 Supported versions:
 
 - `SC4E64`: Rev 0 (USA) (Debug)
+- `SC4P64`: Rev 0 (EU) (Debug) - USA and EU Rev 0 are functionally the same
 
 Dependencies
 ============
