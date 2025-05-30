@@ -185,8 +185,9 @@ cflags_base = [
     "-enum int",
     "-fp hardware",
     "-Cpp_exceptions off",
+    "-func_align 4",
     # "-W all",
-    "-O4,p",
+    "-O4,s",
     "-inline auto",
     '-pragma "cats off"',
     '-pragma "warn_notinlined off"',
@@ -195,8 +196,8 @@ cflags_base = [
     "-RTTI off",
     "-fp_contract on",
     "-str reuse",
-    "-multibyte",  # For Wii compilers, replace with `-enc SJIS`
-    "-i include",
+    "-enc SJIS",
+    "-i src",
     f"-i build/{config.version}/include",
     f"-DBUILD_VERSION={version_num}",
     f"-DVERSION_{config.version}",
@@ -229,36 +230,9 @@ cflags_rel = [
 config.linker_version = "Wii/1.5"
 
 
-# Helper function for Dolphin libraries
-def DolphinLib(lib_name: str, objects: List[Object]) -> Dict[str, Any]:
-    return {
-        "lib": lib_name,
-        "mw_version": "GC/1.2.5n",
-        "cflags": cflags_base,
-        "progress_category": "sdk",
-        "objects": objects,
-    }
-
-
-# Helper function for REL script objects
-def Rel(lib_name: str, objects: List[Object]) -> Dict[str, Any]:
-    return {
-        "lib": lib_name,
-        "mw_version": "GC/1.3.2",
-        "cflags": cflags_rel,
-        "progress_category": "game",
-        "objects": objects,
-    }
-
-
 Matching = True                   # Object matches and should be linked
 NonMatching = False               # Object does not match and should not be linked
 Equivalent = config.non_matching  # Object should be linked when configured with --non-matching
-
-
-# Object is only matching for specific versions
-def MatchingFor(*versions):
-    return config.version in versions
 
 
 config.warn_missing_config = True
@@ -268,12 +242,13 @@ config.libs = [
         "lib": "Runtime.PPCEABI.H",
         "mw_version": config.linker_version,
         "cflags": cflags_runtime,
-        "progress_category": "sdk",  # str | List[str]
+        "progress_category": "sdk",
         "objects": [
-            Object(NonMatching, "runtime.ppceabi.h/global_destructor_chain.c"),
-            Object(NonMatching, "runtime.ppceabi.h/__init_cpp_exceptions.cpp"),
-        ],
-    },
+            Object(Matching, "runtime.ppceabi.h/global_destructor_chain.c"),
+            Object(Matching, "runtime.ppceabi.h/__init_cpp_exceptions.cpp"),
+            Object(Matching, "runtime.ppceabi.h/Gecko_ExceptionPPC.cpp")
+        ]
+    }
 ]
 
 
