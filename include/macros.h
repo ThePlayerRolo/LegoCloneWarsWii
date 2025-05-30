@@ -1,7 +1,7 @@
 #ifndef MACROS_H
     #define MACROS_H
 
-    #include "compiler_macros.h"
+    #include "compiler_macros.h"  /* IWYU pragma: export */
 
     #define STR_(x) #x
     #define STR(x) STR_(x)
