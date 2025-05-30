@@ -29,7 +29,8 @@ from tools.project import (
 # Game versions
 DEFAULT_VERSION = 0
 VERSIONS = [
-    "SC4E64",  # 0
+    "SC4E64",   # 0
+    "SC4P64",   # 1
 ]
 
 parser = argparse.ArgumentParser()
