@@ -277,7 +277,7 @@ config.libs = [
         ],
         "progress_category": "sdk",
         "objects": [
-            Object(NonMatching, "os/__ppc_eabi_init.c", extra_cflags=["-O4,p"]),
+            Object(Matching, "os/__ppc_eabi_init.c", extra_cflags=["-O4,p"]),
             Object(NonMatching, "os/__start.c", extra_cflags=["-O4,p"]),
             Object(NonMatching, "os/OS.c", extra_cflags=["-O4,p"]),
             Object(NonMatching, "os/OSAlarm.c", extra_cflags=["-O4,p"]),
