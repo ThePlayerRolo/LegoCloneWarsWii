@@ -1948,7 +1948,7 @@ os/__ppc_eabi_init.c:
 	.init       start:0x80004360 end:0x800043C4
 	.text       start:0x80764260 end:0x80764320
 
-gx/GXInit.cpp:
+gx/GXInit.c:
 	.text       start:0x80764320 end:0x807654B0
 	.data       start:0x808A3EE0 end:0x808A4120
 	.sdata      start:0x808C1850 end:0x808C1858
@@ -1956,89 +1956,89 @@ gx/GXInit.cpp:
 	.sdata2     start:0x808CDB58 end:0x808CDB80
 	.bss        start:0x80951850 end:0x80951ED0
 
-gx/GXFifo.cpp:
+gx/GXFifo.c:
 	.text       start:0x807654B0 end:0x80765EF0
 	.data       start:0x808A4120 end:0x808A4150
 	.sbss       start:0x808C62C0 end:0x808C62E0
 	.bss        start:0x80951ED0 end:0x80951F40
 
-gx/GXAttr.cpp:
+gx/GXAttr.c:
 	.text       start:0x80765EF0 end:0x80766A40
 	.data       start:0x808A4150 end:0x808A4298
 	.sdata      start:0x808C1858 end:0x808C1868
 
-gx/GXMisc.cpp:
+gx/GXMisc.c:
 	.text       start:0x80766A40 end:0x80767470
 	.sbss       start:0x808C62E0 end:0x808C62F8
 
-gx/GXGeometry.cpp:
+gx/GXGeometry.c:
 	.text       start:0x80767470 end:0x80767A80
 
-gx/GXFrameBuf.cpp:
+gx/GXFrameBuf.c:
 	.text       start:0x80767A80 end:0x807682D0
 	.data       start:0x808A4298 end:0x808A4478
 	.sdata2     start:0x808CDB80 end:0x808CDB88
 
-gx/GXLight.cpp:
+gx/GXLight.c:
 	.text       start:0x807682D0 end:0x80768630
 
-gx/GXTexture.cpp:
+gx/GXTexture.c:
 	.text       start:0x80768630 end:0x807696A0
 	.data       start:0x808A4478 end:0x808A46A0
 	.sdata      start:0x808C1868 end:0x808C18A8
 	.sdata2     start:0x808CDB88 end:0x808CDBB0
 
-gx/GXBump.cpp:
+gx/GXBump.c:
 	.text       start:0x807696A0 end:0x80769B50
 	.sdata2     start:0x808CDBB0 end:0x808CDBB8
 
-gx/GXTev.cpp:
+gx/GXTev.c:
 	.text       start:0x80769B50 end:0x8076A220
 	.data       start:0x808A46A0 end:0x808A4718
 
-gx/GXPixel.cpp:
+gx/GXPixel.c:
 	.text       start:0x8076A220 end:0x8076A840
 	.data       start:0x808A4718 end:0x808A4738
 	.sdata2     start:0x808CDBB8 end:0x808CDBF0
 
-gx/GXDisplayList.cpp:
+gx/GXDisplayList.c:
 	.text       start:0x8076A840 end:0x8076A8C0
 
-gx/GXTransform.cpp:
+gx/GXTransform.c:
 	.text       start:0x8076A8C0 end:0x8076ADB0
 	.sdata2     start:0x808CDBF0 end:0x808CDC00
 
-gx/GXPerf.cpp:
+gx/GXPerf.c:
 	.text       start:0x8076ADB0 end:0x8076B690
 	.data       start:0x808A4738 end:0x808A4820
 
-dvd/dvdfs.cpp:
+dvd/dvdfs.c:
 	.text       start:0x8076B690 end:0x8076C090
 	.data       start:0x808A4820 end:0x808A49C0
 	.sdata      start:0x808C18A8 end:0x808C18B8
 	.sbss       start:0x808C62F8 end:0x808C6320
 
-dvd/dvd.cpp:
+dvd/dvd.c:
 	.text       start:0x8076C090 end:0x80770E60
 	.data       start:0x808A49C0 end:0x808A4E08
 	.sdata      start:0x808C18B8 end:0x808C18D0
 	.sbss       start:0x808C6320 end:0x808C63B8
 	.bss        start:0x80951F40 end:0x80956BF0
 
-dvd/dvdqueue.cpp:
+dvd/dvdqueue.c:
 	.text       start:0x80770E60 end:0x807710E0
 	.bss        start:0x80956BF0 end:0x80956C20
 
-dvd/dvderror.cpp:
+dvd/dvderror.c:
 	.text       start:0x807710E0 end:0x80771B00
 	.data       start:0x808A4E08 end:0x808A4E38
 	.sbss       start:0x808C63B8 end:0x808C63C8
 	.bss        start:0x80956C20 end:0x80956E80
 
-dvd/dvdidutils.cpp:
+dvd/dvdidutils.c:
 	.text       start:0x80771B00 end:0x80771BF0
 
-dvd/dvdFatal.cpp:
+dvd/dvdFatal.c:
 	.text       start:0x80771BF0 end:0x80771D60
 	.rodata     start:0x8084A9E8 end:0x8084AA20
 	.data       start:0x808A4E38 end:0x808A5600
@@ -2046,7 +2046,7 @@ dvd/dvdFatal.cpp:
 	.sbss       start:0x808C63C8 end:0x808C63D0
 	.sdata2     start:0x808CDC00 end:0x808CDC08
 
-dvd/dvdDeviceError.cpp:
+dvd/dvdDeviceError.c:
 	.text       start:0x80771D60 end:0x80771FF0
 	.rodata     start:0x8084AA20 end:0x8084AA40
 	.data       start:0x808A5600 end:0x808A5798
@@ -2055,7 +2055,7 @@ dvd/dvdDeviceError.cpp:
 	.sdata2     start:0x808CDC08 end:0x808CDC10
 	.bss        start:0x80956E80 end:0x80956EA0
 
-dvd/dvd_broadway.cpp:
+dvd/dvd_broadway.c:
 	.text       start:0x80771FF0 end:0x80774670
 	.data       start:0x808A5798 end:0x808A66A0
 	.sdata      start:0x808C18E0 end:0x808C18F0
@@ -2268,188 +2268,188 @@ NdevExi2A/DebuggerDriver.cpp:
 NdevExi2A/exi2.cpp:
 	.text       start:0x80798504 end:0x80798C90
 
-ai/ai.cpp:
+ai/ai.c:
 	.text       start:0x80798C90 end:0x80799260
 	.data       start:0x808AA940 end:0x808AA988
 	.sdata      start:0x808C18F8 end:0x808C1900
 	.sbss       start:0x808C6418 end:0x808C6458
 
-ax/AX.cpp:
+ax/AX.c:
 	.text       start:0x80799260 end:0x80799320
 	.data       start:0x808AA988 end:0x808AA9D0
 	.sdata      start:0x808C1900 end:0x808C1908
 	.sbss       start:0x808C6458 end:0x808C6460
 
-ax/AXAlloc.cpp:
+ax/AXAlloc.c:
 	.text       start:0x80799320 end:0x80799770
 	.sbss       start:0x808C6460 end:0x808C6468
 	.bss        start:0x80957EE0 end:0x80957FE0
 
-ax/AXAux.cpp:
+ax/AXAux.c:
 	.text       start:0x80799770 end:0x80799F10
 	.sbss       start:0x808C6468 end:0x808C64B0
 	.bss        start:0x80957FE0 end:0x8095B160
 
-ax/AXCL.cpp:
+ax/AXCL.c:
 	.text       start:0x80799F10 end:0x8079A9E0
 	.sbss       start:0x808C64B0 end:0x808C64D8
 	.bss        start:0x8095B160 end:0x8095B260
 
-ax/AXOut.cpp:
+ax/AXOut.c:
 	.text       start:0x8079A9E0 end:0x8079B250
 	.sbss       start:0x808C64D8 end:0x808C6518
 	.bss        start:0x8095B260 end:0x8095C060
 
-ax/AXSPB.cpp:
+ax/AXSPB.c:
 	.text       start:0x8079B250 end:0x8079B680
 	.sbss       start:0x808C6518 end:0x808C6568
 	.bss        start:0x8095C060 end:0x8095C0E0
 
-ax/AXVPB.cpp:
+ax/AXVPB.c:
 	.text       start:0x8079B680 end:0x8079CD70
 	.data       start:0x808AA9D0 end:0x808AAA60
 	.sbss       start:0x808C6568 end:0x808C6588
 	.sdata2     start:0x808CDC10 end:0x808CDC30
 	.bss        start:0x8095C0E0 end:0x8096D7E0
 
-ax/AXComp.cpp:
+ax/AXComp.c:
 	.data       start:0x808AAA60 end:0x808ABA20
 
-ax/DSPCode.cpp:
+ax/DSPCode.c:
 	.data       start:0x808ABA20 end:0x808ADA20
 	.sdata      start:0x808C1908 end:0x808C1910
 
-ax/AXProf.cpp:
+ax/AXProf.c:
 	.text       start:0x8079CD70 end:0x8079CDB0
 	.sbss       start:0x808C6588 end:0x808C6598
 
-axfx/AXFXReverbHi.cpp:
+axfx/AXFXReverbHi.c:
 	.text       start:0x8079CDB0 end:0x8079CE60
 	.sdata2     start:0x808CDC30 end:0x808CDC38
 
-axfx/AXFXReverbHiExp.cpp:
+axfx/AXFXReverbHiExp.c:
 	.text       start:0x8079CE60 end:0x8079DC90
 	.data       start:0x808ADA20 end:0x808ADBC0
 	.sdata2     start:0x808CDC38 end:0x808CDC78
 
-axfx/AXFXReverbHiExpDpl2.cpp:
+axfx/AXFXReverbHiExpDpl2.c:
 	.text       start:0x8079DC90 end:0x8079EDA0
 	.data       start:0x808ADBC0 end:0x808ADD80
 	.sdata2     start:0x808CDC78 end:0x808CDCB8
 
-axfx/AXFXHooks.cpp:
+axfx/AXFXHooks.c:
 	.text       start:0x8079EDA0 end:0x8079EDF0
 	.sdata      start:0x808C1910 end:0x808C1918
 
-base/PPCArch.cpp:
+base/PPCArch.c:
 	.text       start:0x8079EDF0 end:0x8079F000
 	.data       start:0x808ADD80 end:0x808ADDB8
 
-dsp/dsp.cpp:
+dsp/dsp.c:
 	.text       start:0x8079F000 end:0x8079F2A0
 	.data       start:0x808ADDB8 end:0x808ADE38
 	.sdata      start:0x808C1918 end:0x808C1920
 	.sbss       start:0x808C6598 end:0x808C65A0
 
-dsp/dsp_debug.cpp:
+dsp/dsp_debug.c:
 	.text       start:0x8079F2A0 end:0x8079F2A0
 
-dsp/dsp_task.cpp:
+dsp/dsp_task.c:
 	.text       start:0x8079F2A0 end:0x8079FB40
 	.data       start:0x808ADE38 end:0x808ADF78
 	.sbss       start:0x808C65A0 end:0x808C65B8
 
-euart/euart.cpp:
+euart/euart.c:
 	.text       start:0x8079FB40 end:0x8079FEC0
 	.sbss       start:0x808C65B8 end:0x808C65C8
 
-exi/EXIBios.cpp:
+exi/EXIBios.c:
 	.text       start:0x8079FEC0 end:0x807A17C0
 	.data       start:0x808ADF78 end:0x808ADFC0
 	.sdata      start:0x808C1920 end:0x808C1928
 	.sbss       start:0x808C65C8 end:0x808C65D0
 	.bss        start:0x8096D7E0 end:0x8096D8A0
 
-exi/EXIUart.cpp:
+exi/EXIUart.c:
 	.text       start:0x807A17C0 end:0x807A1B00
 	.sbss       start:0x808C65D0 end:0x808C65E0
 
-exi/EXICommon.cpp:
+exi/EXICommon.c:
 	.text       start:0x807A1B00 end:0x807A1C90
 	.sdata2     start:0x808CDCB8 end:0x808CDCC0
 
-fs/fs.cpp:
+fs/fs.c:
 	.text       start:0x807A1C90 end:0x807A32A0
 	.data       start:0x808ADFC0 end:0x808ADFE8
 	.sdata      start:0x808C1928 end:0x808C1938
 	.sbss       start:0x808C65E0 end:0x808C65F8
 
-ipc/ipcMain.cpp:
+ipc/ipcMain.c:
 	.text       start:0x807A32A0 end:0x807A3390
 	.sbss       start:0x808C65F8 end:0x808C6610
 
-ipc/ipcclt.cpp:
+ipc/ipcclt.c:
 	.text       start:0x807A3390 end:0x807A4DF0
 	.sdata      start:0x808C1938 end:0x808C1940
 	.sbss       start:0x808C6610 end:0x808C6620
 	.bss        start:0x8096D8A0 end:0x8096D9E0
 
-ipc/memory.cpp:
+ipc/memory.c:
 	.text       start:0x807A4DF0 end:0x807A5320
 	.bss        start:0x8096D9E0 end:0x8096DA60
 
-ipc/ipcProfile.cpp:
+ipc/ipcProfile.c:
 	.text       start:0x807A5320 end:0x807A5730
 	.sbss       start:0x808C6620 end:0x808C6628
 	.bss        start:0x8096DA60 end:0x809714E0
 
-mem/mem_heapCommon.cpp:
+mem/mem_heapCommon.c:
 	.text       start:0x807A5730 end:0x807A5BA0
 	.sbss       start:0x808C6628 end:0x808C6630
 	.bss        start:0x809714E0 end:0x80971508
 
-mem/mem_expHeap.cpp:
+mem/mem_expHeap.c:
 	.text       start:0x807A5BA0 end:0x807A6350
 
-mem/mem_allocator.cpp:
+mem/mem_allocator.c:
 	.text       start:0x807A6350 end:0x807A63B0
 	.sdata2     start:0x808CDCC0 end:0x808CDCC8
 
-mem/mem_list.cpp:
+mem/mem_list.c:
 	.text       start:0x807A63B0 end:0x807A63B0
 
-mtx/mtx.cpp:
+mtx/mtx.c:
 	.text       start:0x807A63B0 end:0x807A6830
 	.sdata      start:0x808C1940 end:0x808C1948
 	.sdata2     start:0x808CDCC8 end:0x808CDCD0
 
-mtx/mtxvec.cpp:
+mtx/mtxvec.c:
 	.text       start:0x807A6830 end:0x807A6920
 
-mtx/mtx44.cpp:
+mtx/mtx44.c:
 	.text       start:0x807A6920 end:0x807A69C0
 	.sdata2     start:0x808CDCD0 end:0x808CDCE0
 
-mix/mix.cpp:
+mix/mix.c:
 	.text       start:0x807A69C0 end:0x807A82C0
 	.data       start:0x808ADFE8 end:0x808AEB80
 	.sbss       start:0x808C6630 end:0x808C6640
 	.bss        start:0x80971508 end:0x80973F08
 
-mix/remote.cpp:
+mix/remote.c:
 	.text       start:0x807A82C0 end:0x807A8320
 	.sbss       start:0x808C6640 end:0x808C6648
 	.bss        start:0x80973F08 end:0x809758A0
 
-nand/nand.cpp:
+nand/nand.c:
 	.text       start:0x807A8320 end:0x807A9620
 	.rodata     start:0x8084AFB0 end:0x8084AFF8
 	.sdata      start:0x808C1948 end:0x808C1950
 
-nand/NANDOpenClose.cpp:
+nand/NANDOpenClose.c:
 	.text       start:0x807A9620 end:0x807A9B30
 
-nand/NANDCore.cpp:
+nand/NANDCore.c:
 	.text       start:0x807A9B30 end:0x807AAD20
 	.rodata     start:0x8084AFF8 end:0x8084B140
 	.data       start:0x808AEB80 end:0x808AECD0
@@ -2457,26 +2457,26 @@ nand/NANDCore.cpp:
 	.sbss       start:0x808C6648 end:0x808C6650
 	.bss        start:0x809758A0 end:0x80975900
 
-nand/NANDCheck.cpp:
+nand/NANDCheck.c:
 	.text       start:0x807AAD20 end:0x807AAEF0
 	.data       start:0x808AECD0 end:0x808AED80
 	.sdata      start:0x808C1978 end:0x808C1988
 
-nand/NANDLogging.cpp:
+nand/NANDLogging.c:
 	.text       start:0x807AAEF0 end:0x807AB540
 	.data       start:0x808AED80 end:0x808AEDC8
 	.sdata      start:0x808C1988 end:0x808C1990
 	.sbss       start:0x808C6650 end:0x808C6658
 	.bss        start:0x80975900 end:0x80975C00
 
-nand/NANDErrorMessage.cpp:
+nand/NANDErrorMessage.c:
 	.text       start:0x807AB540 end:0x807AB840
 	.rodata     start:0x8084B140 end:0x8084B358
 	.data       start:0x808AEDC8 end:0x808B09F8
 	.sbss       start:0x808C6658 end:0x808C6660
 	.sdata2     start:0x808CDCE0 end:0x808CDD10
 
-kpad/KPAD.cpp:
+kpad/KPAD.c:
 	.text       start:0x807AB840 end:0x807B06D0
 	.data       start:0x808B09F8 end:0x808B0AB8
 	.sdata      start:0x808C1990 end:0x808C1A10
@@ -2484,18 +2484,18 @@ kpad/KPAD.cpp:
 	.sdata2     start:0x808CDD10 end:0x808CDDA0
 	.bss        start:0x80975C00 end:0x809776A0
 
-kpad/KMPLS.cpp:
+kpad/KMPLS.c:
 	.text       start:0x807B06D0 end:0x807B27F0
 	.data       start:0x808B0AB8 end:0x808B0B00
 	.sbss       start:0x808C66B0 end:0x808C66B8
 	.sdata2     start:0x808CDDA0 end:0x808CDE28
 
-kpad/KZMplsTestSub.cpp:
+kpad/KZMplsTestSub.c:
 	.text       start:0x807B27F0 end:0x807B3200
 	.data       start:0x808B0B00 end:0x808B0B28
 	.sdata2     start:0x808CDE28 end:0x808CDE38
 
-wpad/WPAD.cpp:
+wpad/WPAD.c:
 	.text       start:0x807B3200 end:0x807BDC90
 	.rodata     start:0x8084B358 end:0x8084B428
 	.data       start:0x808B0B28 end:0x808B0DB0
@@ -2504,7 +2504,7 @@ wpad/WPAD.cpp:
 	.sdata2     start:0x808CDE38 end:0x808CDE40
 	.bss        start:0x809776A0 end:0x8097B680
 
-wpad/WPADHIDParser.cpp:
+wpad/WPADHIDParser.c:
 	.text       start:0x807BDC90 end:0x807C2E20
 	.rodata     start:0x8084B428 end:0x8084B458
 	.data       start:0x808B0DB0 end:0x808B0EA8
@@ -2512,18 +2512,18 @@ wpad/WPADHIDParser.cpp:
 	.sdata2     start:0x808CDE40 end:0x808CDEB8
 	.bss        start:0x8097B680 end:0x8097B6E0
 
-wpad/WPADEncrypt.cpp:
+wpad/WPADEncrypt.c:
 	.text       start:0x807C2E20 end:0x807C3CE0
 	.data       start:0x808B0EA8 end:0x808B2108
 	.sbss       start:0x808C6748 end:0x808C6750
 
-wpad/WPADMem.cpp:
+wpad/WPADMem.c:
 	.text       start:0x807C3CE0 end:0x807C3DF0
 
-wpad/lint.cpp:
+wpad/lint.c:
 	.text       start:0x807C3DF0 end:0x807C4660
 
-wpad/WUD.cpp:
+wpad/WUD.c:
 	.text       start:0x807C4660 end:0x807C9D80
 	.data       start:0x808B2108 end:0x808B2450
 	.sdata      start:0x808C1A28 end:0x808C1A38
@@ -2531,314 +2531,314 @@ wpad/WUD.cpp:
 	.sdata2     start:0x808CDEB8 end:0x808CDEC0
 	.bss        start:0x8097B6E0 end:0x8097D888
 
-wpad/WUDHidHost.cpp:
+wpad/WUDHidHost.c:
 	.text       start:0x807C9D80 end:0x807CA1C0
 	.data       start:0x808B2450 end:0x808B2490
 
-bte/gki_buffer.cpp:
+bte/gki_buffer.c:
 	.text       start:0x807CA1C0 end:0x807CB650
 	.data       start:0x808B2490 end:0x808B25D8
 
-bte/gki_time.cpp:
+bte/gki_time.c:
 	.text       start:0x807CB650 end:0x807CBBC0
 
-bte/gki_ppc.cpp:
+bte/gki_ppc.c:
 	.text       start:0x807CBBC0 end:0x807CBE70
 	.bss        start:0x8097D888 end:0x809A6368
 
-bte/hcisu_h2.cpp:
+bte/hcisu_h2.c:
 	.text       start:0x807CBE70 end:0x807CC530
 	.rodata     start:0x8084B458 end:0x8084B470
 	.data       start:0x808B25D8 end:0x808B2648
 	.sdata2     start:0x808CDEC0 end:0x808CDED0
 	.bss        start:0x809A6368 end:0x809A63A0
 
-bte/uusb_ppc.cpp:
+bte/uusb_ppc.c:
 	.text       start:0x807CC530 end:0x807CD1A0
 	.sdata      start:0x808C1A38 end:0x808C1A48
 	.sbss       start:0x808C6788 end:0x808C67A0
 	.bss        start:0x809A63A0 end:0x809A8400
 
-bte/bta_dm_cfg.cpp:
+bte/bta_dm_cfg.c:
 	.rodata     start:0x8084B470 end:0x8084B500
 	.sdata      start:0x808C1A48 end:0x808C1A60
 	.sbss2      start:0x808CE390 end:0x808CE398
 
-bte/bta_hh_cfg.cpp:
+bte/bta_hh_cfg.c:
 	.rodata     start:0x8084B500 end:0x8084B510
 	.sdata      start:0x808C1A60 end:0x808C1A70
 
-bte/bta_sys_cfg.cpp:
+bte/bta_sys_cfg.c:
 	.sdata      start:0x808C1A70 end:0x808C1A78
 	.sdata2     start:0x808CDED0 end:0x808CDED8
 
-bte/bte_hcisu.cpp:
+bte/bte_hcisu.c:
 	.text       start:0x807CD1A0 end:0x807CD270
 	.sbss       start:0x808C67A0 end:0x808C67A8
 
-bte/bte_init.cpp:
+bte/bte_init.c:
 	.text       start:0x807CD270 end:0x807CD2A0
 
-bte/bte_logmsg.cpp:
+bte/bte_logmsg.c:
 	.text       start:0x807CD2A0 end:0x807CD380
 	.sdata      start:0x808C1A78 end:0x808C1A80
 	.bss        start:0x809A8400 end:0x809A8BE0
 
-bte/bte_main.cpp:
+bte/bte_main.c:
 	.text       start:0x807CD380 end:0x807CD4F0
 	.sdata      start:0x808C1A80 end:0x808C1A88
 	.sbss       start:0x808C67A8 end:0x808C67B0
 	.bss        start:0x809A8BE0 end:0x809A9C10
 
-bte/btu_task1.cpp:
+bte/btu_task1.c:
 	.text       start:0x807CD4F0 end:0x807CD934
 	.sdata      start:0x808C1A88 end:0x808C1A90
 	.sbss       start:0x808C67B0 end:0x808C67B8
 	.bss        start:0x809A9C10 end:0x809A9C98
 
-bte/bd.cpp:
+bte/bd.c:
 	.text       start:0x807CD934 end:0x807CDA08
 	.sbss2      start:0x808CE398 end:0x808CE3A0
 
-bte/bta_sys_conn.cpp:
+bte/bta_sys_conn.c:
 	.text       start:0x807CDA08 end:0x807CDC5C
 
-bte/bta_sys_main.cpp:
+bte/bta_sys_main.c:
 	.text       start:0x807CDC5C end:0x807CDEA0
 	.data       start:0x808B2648 end:0x808B2680
 	.sbss       start:0x808C67B8 end:0x808C67C0
 	.bss        start:0x809A9C98 end:0x809A9D28
 
-bte/ptim.cpp:
+bte/ptim.c:
 	.text       start:0x807CDEA0 end:0x807CE080
 
-bte/utl.cpp:
+bte/utl.c:
 	.text       start:0x807CE080 end:0x807CE0C4
 
-bte/bta_dm_act.cpp:
+bte/bta_dm_act.c:
 	.text       start:0x807CE0C4 end:0x807D03D8
 	.rodata     start:0x8084B510 end:0x8084B5B8
 	.data       start:0x808B2680 end:0x808B27C0
 	.sdata2     start:0x808CDED8 end:0x808CDEE0
 	.bss        start:0x809A9D28 end:0x809A9D58
 
-bte/bta_dm_api.cpp:
+bte/bta_dm_api.c:
 	.text       start:0x807D03D8 end:0x807D0844
 	.sdata2     start:0x808CDEE0 end:0x808CDEF0
 
-bte/bta_dm_main.cpp:
+bte/bta_dm_main.c:
 	.text       start:0x807D0844 end:0x807D09A4
 	.rodata     start:0x8084B5B8 end:0x8084B6E0
 	.bss        start:0x809A9D58 end:0x809A9ED8
 
-bte/bta_dm_pm.cpp:
+bte/bta_dm_pm.c:
 	.text       start:0x807D09A4 end:0x807D13C0
 	.data       start:0x808B27C0 end:0x808B2810
 	.bss        start:0x809A9ED8 end:0x809A9F08
 
-bte/bta_hh_act.cpp:
+bte/bta_hh_act.c:
 	.text       start:0x807D13C0 end:0x807D2B08
 	.data       start:0x808B2810 end:0x808B2D08
 	.sdata      start:0x808C1A90 end:0x808C1A98
 
-bte/bta_hh_api.cpp:
+bte/bta_hh_api.c:
 	.text       start:0x807D2B08 end:0x807D2ED8
 	.data       start:0x808B2D08 end:0x808B2D38
 	.sdata2     start:0x808CDEF0 end:0x808CDEF8
 
-bte/bta_hh_main.cpp:
+bte/bta_hh_main.c:
 	.text       start:0x807D2ED8 end:0x807D342C
 	.rodata     start:0x8084B6E0 end:0x8084B768
 	.data       start:0x808B2D38 end:0x808B3018
 	.bss        start:0x809A9F08 end:0x809AA138
 
-bte/bta_hh_utils.cpp:
+bte/bta_hh_utils.c:
 	.text       start:0x807D342C end:0x807D37D8
 	.data       start:0x808B3018 end:0x808B32D8
 
-bte/btm_acl.cpp:
+bte/btm_acl.c:
 	.text       start:0x807D37D8 end:0x807D551C
 	.data       start:0x808B32D8 end:0x808B36F8
 
-bte/btm_dev.cpp:
+bte/btm_dev.c:
 	.text       start:0x807D551C end:0x807D5BE8
 
-bte/btm_devctl.cpp:
+bte/btm_devctl.c:
 	.text       start:0x807D5BE8 end:0x807D7570
 	.data       start:0x808B36F8 end:0x808B3958
 	.sdata      start:0x808C1A98 end:0x808C1AB0
 
-bte/btm_discovery.cpp:
+bte/btm_discovery.c:
 	.text       start:0x807D7570 end:0x807D76A0
 
-bte/btm_inq.cpp:
+bte/btm_inq.c:
 	.text       start:0x807D76A0 end:0x807D9134
 	.data       start:0x808B3958 end:0x808B3B68
 	.sdata2     start:0x808CDEF8 end:0x808CDF00
 
-bte/btm_main.cpp:
+bte/btm_main.c:
 	.text       start:0x807D9134 end:0x807D9190
 	.bss        start:0x809AA138 end:0x809AC900
 
-bte/btm_pm.cpp:
+bte/btm_pm.c:
 	.text       start:0x807D9190 end:0x807D9E24
 	.rodata     start:0x8084B768 end:0x8084B778
 	.data       start:0x808B3B68 end:0x808B3BA8
 	.sdata2     start:0x808CDF00 end:0x808CDF08
 
-bte/btm_sco.cpp:
+bte/btm_sco.c:
 	.text       start:0x807D9E24 end:0x807DAC5C
 	.rodata     start:0x8084B778 end:0x8084B788
 	.data       start:0x808B3BA8 end:0x808B3EA8
 
-bte/btm_sec.cpp:
+bte/btm_sec.c:
 	.text       start:0x807DAC5C end:0x807DDC20
 	.data       start:0x808B3EA8 end:0x808B48B8
 	.sdata2     start:0x808CDF08 end:0x808CDF10
 
-bte/btu_hcif.cpp:
+bte/btu_hcif.c:
 	.text       start:0x807DDC20 end:0x807DEE7C
 	.data       start:0x808B48B8 end:0x808B4948
 
-bte/btu_init.cpp:
+bte/btu_init.c:
 	.text       start:0x807DEE7C end:0x807DEEF4
 	.sdata2     start:0x808CDF10 end:0x808CDF18
 
-bte/wbt_ext.cpp:
+bte/wbt_ext.c:
 	.text       start:0x807DEEF4 end:0x807DEFD4
 
-bte/gap_api.cpp:
+bte/gap_api.c:
 	.text       start:0x807DEFD4 end:0x807DF034
 
-bte/gap_conn.cpp:
+bte/gap_conn.c:
 	.text       start:0x807DF034 end:0x807DFB70
 	.data       start:0x808B4948 end:0x808B4A18
 	.sdata      start:0x808C1AB0 end:0x808C1AB8
 
-bte/gap_utils.cpp:
+bte/gap_utils.c:
 	.text       start:0x807DFB70 end:0x807E018C
 	.data       start:0x808B4A18 end:0x808B4D08
 	.bss        start:0x809AC900 end:0x809ACCB0
 
-bte/hcicmds.cpp:
+bte/hcicmds.c:
 	.text       start:0x807E018C end:0x807E28A8
 	.rodata     start:0x8084B788 end:0x8084B798
 
-bte/hidd_api.cpp:
+bte/hidd_api.c:
 	.text       start:0x807E28A8 end:0x807E2910
 
-bte/hidd_conn.cpp:
+bte/hidd_conn.c:
 	.text       start:0x807E2910 end:0x807E29D0
 	.data       start:0x808B4D08 end:0x808B4D38
 
-bte/hidd_mgmt.cpp:
+bte/hidd_mgmt.c:
 	.text       start:0x807E29D0 end:0x807E2A98
 	.data       start:0x808B4D38 end:0x808B4D58
 	.bss        start:0x809ACCB0 end:0x809ACDF8
 
-bte/hidd_pm.cpp:
+bte/hidd_pm.c:
 	.text       start:0x807E2A98 end:0x807E2E14
 
-bte/hidh_api.cpp:
+bte/hidh_api.c:
 	.text       start:0x807E2E14 end:0x807E3B94
 	.data       start:0x808B4D58 end:0x808B4E70
 	.bss        start:0x809ACDF8 end:0x809AD200
 
-bte/hidh_conn.cpp:
+bte/hidh_conn.c:
 	.text       start:0x807E3B94 end:0x807E5BD4
 	.rodata     start:0x8084B798 end:0x8084B7C0
 	.data       start:0x808B4E70 end:0x808B5258
 
-bte/l2c_api.cpp:
+bte/l2c_api.c:
 	.text       start:0x807E5BD4 end:0x807E679C
 	.data       start:0x808B5258 end:0x808B59E8
 
-bte/l2c_csm.cpp:
+bte/l2c_csm.c:
 	.text       start:0x807E679C end:0x807E7C78
 	.data       start:0x808B59E8 end:0x808B6220
 
-bte/l2c_link.cpp:
+bte/l2c_link.c:
 	.text       start:0x807E7C78 end:0x807E8E04
 	.data       start:0x808B6220 end:0x808B6490
 
-bte/l2c_main.cpp:
+bte/l2c_main.c:
 	.text       start:0x807E8E04 end:0x807E9E34
 	.data       start:0x808B6490 end:0x808B6790
 	.bss        start:0x809AD200 end:0x809AD9E8
 
-bte/l2c_utils.cpp:
+bte/l2c_utils.c:
 	.text       start:0x807E9E34 end:0x807EBCF8
 	.data       start:0x808B6790 end:0x808B6878
 	.sdata      start:0x808C1AB8 end:0x808C1AC8
 
-bte/port_api.cpp:
+bte/port_api.c:
 	.text       start:0x807EBCF8 end:0x807EBD48
 
-bte/port_rfc.cpp:
+bte/port_rfc.c:
 	.text       start:0x807EBD48 end:0x807ED144
 	.data       start:0x808B6878 end:0x808B6BA8
 
-bte/port_utils.cpp:
+bte/port_utils.c:
 	.text       start:0x807ED144 end:0x807ED71C
 	.data       start:0x808B6BA8 end:0x808B6CF0
 
-bte/rfc_l2cap_if.cpp:
+bte/rfc_l2cap_if.c:
 	.text       start:0x807ED71C end:0x807EE04C
 	.data       start:0x808B6CF0 end:0x808B6E30
 
-bte/rfc_mx_fsm.cpp:
+bte/rfc_mx_fsm.c:
 	.text       start:0x807EE04C end:0x807EEC90
 	.data       start:0x808B6E30 end:0x808B70E8
 
-bte/rfc_port_fsm.cpp:
+bte/rfc_port_fsm.c:
 	.text       start:0x807EEC90 end:0x807EFE2C
 	.data       start:0x808B70E8 end:0x808B7410
 
-bte/rfc_port_if.cpp:
+bte/rfc_port_if.c:
 	.text       start:0x807EFE2C end:0x807F0358
 	.bss        start:0x809AD9E8 end:0x809ADE00
 
-bte/rfc_ts_frames.cpp:
+bte/rfc_ts_frames.c:
 	.text       start:0x807F0358 end:0x807F19A0
 	.data       start:0x808B7410 end:0x808B74E8
 	.sdata      start:0x808C1AC8 end:0x808C1AD8
 
-bte/rfc_utils.cpp:
+bte/rfc_utils.c:
 	.text       start:0x807F19A0 end:0x807F2180
 	.rodata     start:0x8084B7C0 end:0x8084B8C0
 	.data       start:0x808B74E8 end:0x808B7578
 
-bte/sdp_api.cpp:
+bte/sdp_api.c:
 	.text       start:0x807F2180 end:0x807F2FE8
 	.data       start:0x808B7578 end:0x808B75C8
 
-bte/sdp_db.cpp:
+bte/sdp_db.c:
 	.text       start:0x807F2FE8 end:0x807F3CB4
 	.data       start:0x808B75C8 end:0x808B7660
 
-bte/sdp_discovery.cpp:
+bte/sdp_discovery.c:
 	.text       start:0x807F3CB4 end:0x807F4F2C
 	.data       start:0x808B7660 end:0x808B77C0
 
-bte/sdp_main.cpp:
+bte/sdp_main.c:
 	.text       start:0x807F4F2C end:0x807F5A98
 	.data       start:0x808B77C0 end:0x808B7B20
 	.bss        start:0x809ADE00 end:0x809B2440
 
-bte/sdp_server.cpp:
+bte/sdp_server.c:
 	.text       start:0x807F5A98 end:0x807F67A8
 	.data       start:0x808B7B20 end:0x808B7B60
 
-bte/sdp_utils.cpp:
+bte/sdp_utils.c:
 	.text       start:0x807F67A8 end:0x807F77F0
 	.rodata     start:0x8084B8C0 end:0x8084B8D0
 	.data       start:0x808B7B60 end:0x808B7C58
 
-pad/Pad.cpp:
+pad/Pad.c:
 	.text       start:0x807F77F0 end:0x807F7850
 	.sbss       start:0x808C67C0 end:0x808C67C8
 
-sc/scsystem.cpp:
+sc/scsystem.c:
 	.text       start:0x807F7850 end:0x807F9100
 	.rodata     start:0x8084B8D0 end:0x8084B928
 	.data       start:0x808B7C58 end:0x808B7E50
@@ -2846,71 +2846,71 @@ sc/scsystem.cpp:
 	.sbss       start:0x808C67C8 end:0x808C67E0
 	.bss        start:0x809B2440 end:0x809BA5E0
 
-sc/scapi.cpp:
+sc/scapi.c:
 	.text       start:0x807F9100 end:0x807F9610
 
-sc/scapi_prdinfo.cpp:
+sc/scapi_prdinfo.c:
 	.text       start:0x807F9610 end:0x807F98A0
 	.data       start:0x808B7E50 end:0x808B7EB0
 	.sdata      start:0x808C1BE8 end:0x808C1BF8
 
-si/SIBios.cpp:
+si/SIBios.c:
 	.text       start:0x807F98A0 end:0x807FA8E0
 	.data       start:0x808B7EB0 end:0x808B7F20
 	.sdata      start:0x808C1BF8 end:0x808C1C00
 	.sbss       start:0x808C67E0 end:0x808C67F0
 	.bss        start:0x809BA5E0 end:0x809BA800
 
-si/SISamplingRate.cpp:
+si/SISamplingRate.c:
 	.text       start:0x807FA8E0 end:0x807FA9D0
 	.data       start:0x808B7F20 end:0x808B7FB8
 	.sbss       start:0x808C67F0 end:0x808C67F8
 
-usb/usb.cpp:
+usb/usb.c:
 	.text       start:0x807FA9D0 end:0x807FBF10
 	.data       start:0x808B7FB8 end:0x808B87E8
 	.sdata      start:0x808C1C00 end:0x808C1C10
 	.sbss       start:0x808C67F8 end:0x808C6808
 
-vi/vi.cpp:
+vi/vi.c:
 	.text       start:0x807FBF10 end:0x807FE850
 	.data       start:0x808B87E8 end:0x808B8D40
 	.sdata      start:0x808C1C10 end:0x808C1C30
 	.sbss       start:0x808C6808 end:0x808C68B8
 	.bss        start:0x809BA800 end:0x809BA970
 
-vi/i2c.cpp:
+vi/i2c.c:
 	.text       start:0x807FE850 end:0x807FF170
 	.sdata      start:0x808C1C30 end:0x808C1C38
 	.sbss       start:0x808C68B8 end:0x808C68C0
 
-vi/vi3in1.cpp:
+vi/vi3in1.c:
 	.text       start:0x807FF170 end:0x808008C0
 	.data       start:0x808B8D40 end:0x808B9350
 	.sdata      start:0x808C1C38 end:0x808C1C48
 	.sbss       start:0x808C68C0 end:0x808C68D8
 	.bss        start:0x809BA970 end:0x809BA990
 
-tpl/TPL.cpp:
+tpl/TPL.c:
 	.text       start:0x808008C0 end:0x80800A00
 	.data       start:0x808B9350 end:0x808B9380
 	.sdata      start:0x808C1C48 end:0x808C1C50
 
-arc/arc.cpp:
+arc/arc.c:
 	.text       start:0x80800A00 end:0x808013AC
 	.data       start:0x808B9380 end:0x808B93F0
 	.sdata      start:0x808C1C50 end:0x808C1C58
 
-wenc/wenc.cpp:
+wenc/wenc.c:
 	.text       start:0x808013AC end:0x80801690
 	.rodata     start:0x8084B928 end:0x8084B968
 	.sdata2     start:0x808CDF18 end:0x808CDF20
 
-esp/esp.cpp:
+esp/esp.c:
 	.text       start:0x80801690 end:0x80801CB0
 	.sdata      start:0x808C1C58 end:0x808C1C68
 
-cx/CXUncompression.cpp:
+cx/CXUncompression.c:
 	.text       start:0x80801CB0 end:0x80801E3C
 
 runtime.ppceabi.h/__mem.c:
