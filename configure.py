@@ -218,6 +218,17 @@ cflags_runtime = [
     "-gccinc",
     "-common off",
     "-inline auto",
+    "-lang=c99",
+]
+
+cflags_trk = [
+    *cflags_base,
+    "-use_lmw_stmw on",
+    "-str reuse,pool,readonly",
+    "-gccinc",
+    "-common off",
+    "-inline auto",
+    "-lang=c99",
 ]
 
 cflags_sdk = [
@@ -227,6 +238,8 @@ cflags_sdk = [
     "-gccinc",
     "-common off",
     "-inline auto",
+    "-O4,p",
+    "-lang=c99",
 ]
 config.linker_version = "Wii/1.0"
 
@@ -242,10 +255,7 @@ config.libs = [
     {
         "lib": "Runtime.PPCEABI.H",
         "mw_version": config.linker_version,
-        "cflags": [
-            *cflags_runtime,
-            "-lang=c99"
-        ],
+        "cflags": cflags_runtime,
         "progress_category": "runtime",
         "objects": [
             Object(Matching, "runtime.ppceabi.h/global_destructor_chain.c",  extra_cflags=["-O4"]),
@@ -262,7 +272,7 @@ config.libs = [
     {
         "lib": "TRK_Hollywood_Revolution",
         "mw_version": config.linker_version,
-        "cflags": cflags_runtime,
+        "cflags": cflags_trk,
         "progress_category": "trk",
         "objects": [
             Object(Matching, "TRK_Hollywood_Revolution/metrotrk/metrotrk/target_options.cpp"),
@@ -271,50 +281,47 @@ config.libs = [
     {
         "lib": "RVL_SDK",
         "mw_version": config.linker_version,
-        "cflags": [
-            *cflags_sdk,
-            "-lang=c99"
-        ],
+        "cflags": cflags_sdk,
         "progress_category": "sdk",
         "objects": [
-            Object(Matching, "os/__ppc_eabi_init.c", extra_cflags=["-O4,p"]),
-            Object(NonMatching, "os/__start.c", extra_cflags=["-O4,p"]),
-            Object(NonMatching, "os/OS.c", extra_cflags=["-O4,p"]),
-            Object(Matching, "os/OSAlarm.c", extra_cflags=["-O4,p"]),
-            Object(Matching, "os/OSAlloc.c", extra_cflags=["-O4,p"]),
-            Object(Matching, "os/OSArena.c", extra_cflags=["-O4,p"]),
-            Object(Matching, "os/OSAudioSystem.c", extra_cflags=["-O4,p"]),
-            Object(NonMatching, "os/OSCache.c", extra_cflags=["-O4,p"]),
-            Object(Matching, "os/OSContext.c", extra_cflags=["-O4,p"]),
-            Object(Matching, "os/OSError.c", extra_cflags=["-O4,p"]),
-            Object(NonMatching, "os/OSExec.c", extra_cflags=["-O4,p"]),
-            Object(NonMatching, "os/OSFatal.c", extra_cflags=["-O4,p"]),
-            Object(NonMatching, "os/OSFont.c", extra_cflags=["-O4,p"]),
-            Object(NonMatching, "os/OSInterrupt.c", extra_cflags=["-O4,p"]),
-            Object(Matching, "os/OSLink.c", extra_cflags=["-O4,p"]),
-            Object(NonMatching, "os/OSMessage.c", extra_cflags=["-O4,p"]),
-            Object(Matching, "os/OSMemory.c", extra_cflags=["-O4,p"]),
-            Object(NonMatching, "os/OSMutex.c", extra_cflags=["-O4,p"]),
-            Object(Matching, "os/OSReboot.c", extra_cflags=["-O4,p"]),
-            Object(NonMatching, "os/OSReset.c", extra_cflags=["-O4,p"]),
-            Object(NonMatching, "os/OSRtc.c", extra_cflags=["-O4,p"]),
-            Object(NonMatching, "os/OSSemaphore.c", extra_cflags=["-O4,p"]),
-            Object(Matching, "os/OSSync.c", extra_cflags=["-O4,p"]),
-            Object(NonMatching, "os/OSThread.c", extra_cflags=["-O4,s"]),
-            Object(Matching, "os/OSTime.c", extra_cflags=["-O4,p"]),
-            Object(NonMatching, "os/OSUtf.c", extra_cflags=["-O4,p"]),
-            Object(Matching, "os/OSIpc.c", extra_cflags=["-O4,p"]),
-            Object(NonMatching, "os/OSStateTM.c", extra_cflags=["-O4,p"]),
-            Object(NonMatching, "os/OSPlayRecord.c", extra_cflags=["-O4,p"]),
-            Object(Matching, "os/OSStateFlags.c", extra_cflags=["-O4,p"]),
-            Object(NonMatching, "os/OSNet.c", extra_cflags=["-O4,p"]),
-            Object(Matching, "os/OSNandbootInfo.c", extra_cflags=["-O4,p"]),
-            Object(NonMatching, "os/OSPlayTime.c", extra_cflags=["-O4,p"]),
-            Object(NonMatching, "os/OSCrc.c", extra_cflags=["-O4,p"]),
-            Object(NonMatching, "os/OSLaunch.c", extra_cflags=["-O4,p"]),
-            Object(NonMatching, "nand/nand.c", extra_cflags=["-O4,p"]),
-            Object(Matching, "nand/NANDCheck.c", extra_cflags=["-O4,p"]),
-            Object(Matching, "base/PPCArch.c", extra_cflags=["-O4,p"]),
+            Object(Matching, "os/__ppc_eabi_init.c"),
+            Object(NonMatching, "os/__start.c"),
+            Object(NonMatching, "os/OS.c"),
+            Object(Matching, "os/OSAlarm.c"),
+            Object(Matching, "os/OSAlloc.c"),
+            Object(Matching, "os/OSArena.c"),
+            Object(Matching, "os/OSAudioSystem.c"),
+            Object(NonMatching, "os/OSCache.c"),
+            Object(Matching, "os/OSContext.c"),
+            Object(Matching, "os/OSError.c"),
+            Object(NonMatching, "os/OSExec.c"),
+            Object(NonMatching, "os/OSFatal.c"),
+            Object(NonMatching, "os/OSFont.c"),
+            Object(NonMatching, "os/OSInterrupt.c"),
+            Object(Matching, "os/OSLink.c"),
+            Object(NonMatching, "os/OSMessage.c"),
+            Object(Matching, "os/OSMemory.c"),
+            Object(NonMatching, "os/OSMutex.c"),
+            Object(Matching, "os/OSReboot.c"),
+            Object(NonMatching, "os/OSReset.c"),
+            Object(NonMatching, "os/OSRtc.c"),
+            Object(NonMatching, "os/OSSemaphore.c"),
+            Object(Matching, "os/OSSync.c"),
+            Object(NonMatching, "os/OSThread.c"),
+            Object(Matching, "os/OSTime.c"),
+            Object(NonMatching, "os/OSUtf.c"),
+            Object(Matching, "os/OSIpc.c"),
+            Object(NonMatching, "os/OSStateTM.c"),
+            Object(NonMatching, "os/OSPlayRecord.c"),
+            Object(Matching, "os/OSStateFlags.c"),
+            Object(NonMatching, "os/OSNet.c"),
+            Object(Matching, "os/OSNandbootInfo.c"),
+            Object(NonMatching, "os/OSPlayTime.c"),
+            Object(NonMatching, "os/OSCrc.c"),
+            Object(NonMatching, "os/OSLaunch.c"),
+            Object(NonMatching, "nand/nand.c"),
+            Object(Matching, "nand/NANDCheck.c"),
+            Object(Matching, "base/PPCArch.c"),
         ]
     }
 ]
