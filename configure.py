@@ -263,7 +263,10 @@ config.libs = [
     {
         "lib": "RVL_SDK",
         "mw_version": config.linker_version,
-        "cflags": cflags_runtime,
+        "cflags": [
+            *cflags_runtime,
+            "-lang=c99"
+        ],
         "progress_category": "sdk",
         "objects": [
             Object(NonMatching, "os/__ppc_eabi_init.c", extra_cflags=["-O4,p"]),
@@ -280,11 +283,11 @@ config.libs = [
             Object(NonMatching, "os/OSFatal.c", extra_cflags=["-O4,p"]),
             Object(NonMatching, "os/OSFont.c", extra_cflags=["-O4,p"]),
             Object(NonMatching, "os/OSInterrupt.c", extra_cflags=["-O4,p"]),
-            Object(NonMatching, "os/OSLink.c", extra_cflags=["-O4,p"]),
+            Object(Matching, "os/OSLink.c", extra_cflags=["-O4,p"]),
             Object(NonMatching, "os/OSMessage.c", extra_cflags=["-O4,p"]),
             Object(NonMatching, "os/OSMemory.c", extra_cflags=["-O4,p"]),
             Object(NonMatching, "os/OSMutex.c", extra_cflags=["-O4,p"]),
-            Object(NonMatching, "os/OSReboot.c", extra_cflags=["-O4,p"]),
+            Object(Matching, "os/OSReboot.c", extra_cflags=["-O4,p"]),
             Object(NonMatching, "os/OSReset.c", extra_cflags=["-O4,p"]),
             Object(NonMatching, "os/OSRtc.c", extra_cflags=["-O4,p"]),
             Object(NonMatching, "os/OSSemaphore.c", extra_cflags=["-O4,p"]),
