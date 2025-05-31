@@ -56,5 +56,5 @@
             void CONCAT(FORCEBLOCK##module, __LINE__) params;                                    \
             void CONCAT(FORCEBLOCK##module, __LINE__) params { __VA_ARGS__ }
     #endif
-
+    #define DECOMP_DONT_INLINE __attribute__((never_inline))
 #endif

@@ -220,6 +220,14 @@ cflags_runtime = [
     "-inline auto",
 ]
 
+cflags_sdk = [
+    *cflags_base,
+    "-use_lmw_stmw on",
+    "-str reuse,pool",
+    "-gccinc",
+    "-common off",
+    "-inline auto",
+]
 config.linker_version = "Wii/1.0"
 
 
@@ -264,7 +272,7 @@ config.libs = [
         "lib": "RVL_SDK",
         "mw_version": config.linker_version,
         "cflags": [
-            *cflags_runtime,
+            *cflags_sdk,
             "-lang=c99"
         ],
         "progress_category": "sdk",
@@ -298,7 +306,7 @@ config.libs = [
             Object(NonMatching, "os/OSIpc.c", extra_cflags=["-O4,p"]),
             Object(NonMatching, "os/OSStateTM.c", extra_cflags=["-O4,p"]),
             Object(NonMatching, "os/OSPlayRecord.c", extra_cflags=["-O4,p"]),
-            Object(NonMatching, "os/OSStateFlags.c", extra_cflags=["-O4,p"]),
+            Object(Matching, "os/OSStateFlags.c", extra_cflags=["-O4,p"]),
             Object(NonMatching, "os/OSNet.c", extra_cflags=["-O4,p"]),
             Object(NonMatching, "os/OSNandBootInfo.c", extra_cflags=["-O4,p"]),
             Object(NonMatching, "os/OSPlayTime.c", extra_cflags=["-O4,p"]),

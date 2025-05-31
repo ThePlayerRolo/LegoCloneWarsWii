@@ -3,7 +3,7 @@
     #include "types.h"
     #include "Revolution/ARC.h"
     #include "Revolution/IPC.h"
-    #include "Revolution/iostypes.h"
+    #include "Revolution/private/iostypes.h"
     #ifdef __cplusplus
         extern "C" {
     #endif
