@@ -7,11 +7,9 @@
 
     void* OSGetMEM1ArenaHi(void);
     void* OSGetMEM2ArenaHi(void);
-    void* OSGetArenaHi(void);
 
     void* OSGetMEM1ArenaLo(void);
     void* OSGetMEM2ArenaLo(void);
-    void* OSGetArenaLo(void);
 
     void OSSetMEM1ArenaHi(void* hi);
     void OSSetMEM2ArenaHi(void* hi);
