@@ -1,3 +1,4 @@
+/* Originally from Rb3: https://github.com/DarkRTA/rb3/blob/master/src/sdk/RVL_SDK/src/os/OSMemory.c*/
 #include <revolution/OS.h>
 
 static BOOL OnShutdown(BOOL final, u32 event);
