@@ -1,3 +1,4 @@
+/* Originally from RB3: https://github.com/DarkRTA/rb3/blob/master/src/sdk/RVL_SDK/src/os/OSNandbootInfo.c*/
 #include <revolution/OS.h>
 #include <revolution/NAND.h>
 

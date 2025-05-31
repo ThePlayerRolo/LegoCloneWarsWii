@@ -1,3 +1,4 @@
+/* Originally from RB3: https://github.com/DarkRTA/rb3/blob/master/src/sdk/RVL_SDK/src/os/OSReboot.c*/
 #include <revolution/os/OSArena.h>
 #include <revolution/os/OSExec.h>
 #include <revolution/os/OSInterrupt.h>
