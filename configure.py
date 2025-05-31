@@ -314,6 +314,7 @@ config.libs = [
             Object(NonMatching, "os/OSLaunch.c", extra_cflags=["-O4,p"]),
             Object(NonMatching, "nand/nand.c", extra_cflags=["-O4,p"]),
             Object(NonMatching, "nand/NANDCheck.c", extra_cflags=["-O4,p"]),
+            Object(Matching, "base/PPCArch.c", extra_cflags=["-O4,p"]),
         ]
     }
 ]
