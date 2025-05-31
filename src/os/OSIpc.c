@@ -1,3 +1,4 @@
+/* Originally from https://github.com/doldecomp/ogws/blob/master/src/revolution/OS/OSIpc.c*/
 #include <revolution/OS.h>
 
 static void* IpcBufferLo = (void*)-1;
