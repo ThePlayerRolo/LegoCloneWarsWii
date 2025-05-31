@@ -1778,7 +1778,7 @@ dynosdk.master/dynosdk_Lump.cpp:
 	.sdata2     start:0x808CD910 end:0x808CDAF8
 	.bss        start:0x80936750 end:0x80950660
 
-os/OS.cpp:
+os/OS.c:
 	.text       start:0x80756770 end:0x80757C50
 	.data       start:0x80896160 end:0x80896570
 	.sdata      start:0x808C17C0 end:0x808C17F0
@@ -1786,150 +1786,150 @@ os/OS.cpp:
 	.sdata2     start:0x808CDAF8 end:0x808CDB00
 	.bss        start:0x80950660 end:0x809506D0
 
-os/OSAlarm.cpp:
+os/OSAlarm.c:
 	.text       start:0x80757C50 end:0x80758500
 	.data       start:0x80896570 end:0x80896580
 	.sbss       start:0x808C6190 end:0x808C6198
 
-os/OSAlloc.cpp:
+os/OSAlloc.c:
 	.text       start:0x80758500 end:0x80758820
 	.sdata      start:0x808C17F0 end:0x808C17F8
 	.sbss       start:0x808C6198 end:0x808C61A8
 
-os/OSArena.cpp:
+os/OSArena.c:
 	.text       start:0x80758820 end:0x807588E0
 	.sdata      start:0x808C17F8 end:0x808C1800
 	.sbss       start:0x808C61A8 end:0x808C61B0
 
-os/OSAudioSystem.cpp:
+os/OSAudioSystem.c:
 	.text       start:0x807588E0 end:0x80758DA0
 	.data       start:0x80896580 end:0x80896600
 
-os/OSCache.cpp:
+os/OSCache.c:
 	.text       start:0x80758DA0 end:0x80759490
 	.data       start:0x80896600 end:0x80896788
 
-os/OSContext.cpp:
+os/OSContext.c:
 	.text       start:0x80759490 end:0x80759D60
 	.data       start:0x80896788 end:0x80896940
 
-os/OSError.cpp:
+os/OSError.c:
 	.text       start:0x80759D60 end:0x8075A4A0
 	.data       start:0x80896940 end:0x80896C20
 	.sdata      start:0x808C1800 end:0x808C1808
 	.bss        start:0x809506D0 end:0x80950720
 
-os/OSExec.cpp:
+os/OSExec.c:
 	.text       start:0x8075A4A0 end:0x8075BBF0
 	.data       start:0x80896C20 end:0x80896F70
 	.sdata      start:0x808C1808 end:0x808C1818
 	.sbss       start:0x808C61B0 end:0x808C61C8
 	.bss        start:0x80950720 end:0x80950740
 
-os/OSFatal.cpp:
+os/OSFatal.c:
 	.text       start:0x8075BBF0 end:0x8075C820
 	.sdata      start:0x808C1818 end:0x808C1820
 	.sdata2     start:0x808CDB00 end:0x808CDB40
 	.bss        start:0x80950740 end:0x80950A20
 
-os/OSFont.cpp:
+os/OSFont.c:
 	.text       start:0x8075C820 end:0x8075D560
 	.data       start:0x80896F70 end:0x80897A80
 	.sdata      start:0x808C1820 end:0x808C1828
 	.sbss       start:0x808C61C8 end:0x808C61D8
 	.sdata2     start:0x808CDB40 end:0x808CDB48
 
-os/OSInterrupt.cpp:
+os/OSInterrupt.c:
 	.text       start:0x8075D560 end:0x8075DD30
 	.data       start:0x80897A80 end:0x80897AB0
 	.sbss       start:0x808C61D8 end:0x808C61F0
 
-os/OSLink.cpp:
+os/OSLink.c:
 	.text       start:0x8075DD30 end:0x8075DD50
 
-os/OSMessage.cpp:
+os/OSMessage.c:
 	.text       start:0x8075DD50 end:0x8075E030
 
-os/OSMemory.cpp:
+os/OSMemory.c:
 	.text       start:0x8075E030 end:0x8075E7D0
 	.data       start:0x80897AB0 end:0x80897AC0
 	.sbss       start:0x808C61F0 end:0x808C61F8
 
-os/OSMutex.cpp:
+os/OSMutex.c:
 	.text       start:0x8075E7D0 end:0x8075EAF0
 
-os/OSReboot.cpp:
+os/OSReboot.c:
 	.text       start:0x8075EAF0 end:0x8075EB90
 	.sbss       start:0x808C61F8 end:0x808C6200
 
-os/OSReset.cpp:
+os/OSReset.c:
 	.text       start:0x8075EB90 end:0x8075F4C0
 	.data       start:0x80897AC0 end:0x80897D28
 	.sbss       start:0x808C6200 end:0x808C6210
 
-os/OSRtc.cpp:
+os/OSRtc.c:
 	.text       start:0x8075F4C0 end:0x8075FF70
 	.bss        start:0x80950A20 end:0x80950A78
 
-os/OSSemaphore.cpp:
+os/OSSemaphore.c:
 	.text       start:0x8075FF70 end:0x807600F0
 
-os/OSSync.cpp:
+os/OSSync.c:
 	.text       start:0x807600F0 end:0x80760170
 
-os/OSThread.cpp:
+os/OSThread.c:
 	.text       start:0x80760170 end:0x807618D0
 	.sdata      start:0x808C1828 end:0x808C1830
 	.sbss       start:0x808C6210 end:0x808C6220
 	.bss        start:0x80950A78 end:0x80951480
 
-os/OSTime.cpp:
+os/OSTime.c:
 	.text       start:0x807618D0 end:0x80761D00
 	.data       start:0x80897D28 end:0x80897D88
 
-os/OSUtf.cpp:
+os/OSUtf.c:
 	.text       start:0x80761D00 end:0x80761F50
 	.data       start:0x80897D88 end:0x808A3BC8
 
-os/OSIpc.cpp:
+os/OSIpc.c:
 	.text       start:0x80761F50 end:0x80761F90
 	.sdata      start:0x808C1830 end:0x808C1838
 	.sbss       start:0x808C6220 end:0x808C6228
 
-os/OSStateTM.cpp:
+os/OSStateTM.c:
 	.text       start:0x80761F90 end:0x80762640
 	.data       start:0x808A3BC8 end:0x808A3C90
 	.sbss       start:0x808C6228 end:0x808C6248
 	.bss        start:0x80951480 end:0x80951540
 
-os/__start.cpp:
+os/__start.c:
 	.init       start:0x80004000 end:0x80004360
 	.sbss       start:0x808C6248 end:0x808C6250
 
-os/OSPlayRecord.cpp:
+os/OSPlayRecord.c:
 	.text       start:0x80762640 end:0x80762D60
 	.data       start:0x808A3C90 end:0x808A3CD8
 	.sdata      start:0x808C1838 end:0x808C1840
 	.sbss       start:0x808C6250 end:0x808C6270
 	.bss        start:0x80951540 end:0x80951740
 
-os/OSStateFlags.cpp:
+os/OSStateFlags.c:
 	.text       start:0x80762D60 end:0x80762F80
 	.data       start:0x808A3CD8 end:0x808A3D00
 	.bss        start:0x80951740 end:0x80951760
 
-os/OSNet.cpp:
+os/OSNet.c:
 	.text       start:0x80762F80 end:0x80763520
 	.data       start:0x808A3D00 end:0x808A3E68
 	.sdata      start:0x808C1840 end:0x808C1848
 	.sbss       start:0x808C6270 end:0x808C6280
 	.bss        start:0x80951760 end:0x80951820
 
-os/OSNandbootInfo.cpp:
+os/OSNandbootInfo.c:
 	.text       start:0x80763520 end:0x80763730
 	.data       start:0x808A3E68 end:0x808A3E88
 
-os/OSPlayTime.cpp:
+os/OSPlayTime.c:
 	.text       start:0x80763730 end:0x80763F10
 	.data       start:0x808A3E88 end:0x808A3EE0
 	.sdata      start:0x808C1848 end:0x808C1850
@@ -1937,14 +1937,14 @@ os/OSPlayTime.cpp:
 	.sdata2     start:0x808CDB48 end:0x808CDB58
 	.bss        start:0x80951820 end:0x80951850
 
-os/OSCrc.cpp:
+os/OSCrc.c:
 	.text       start:0x80763F10 end:0x80764050
 	.rodata     start:0x8084A9A8 end:0x8084A9E8
 
-os/OSLaunch.cpp:
+os/OSLaunch.c:
 	.text       start:0x80764050 end:0x80764260
 
-os/__ppc_eabi_init.cpp:
+os/__ppc_eabi_init.c:
 	.init       start:0x80004360 end:0x800043C4
 	.text       start:0x80764260 end:0x80764320
 

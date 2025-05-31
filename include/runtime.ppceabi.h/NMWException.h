@@ -1,7 +1,7 @@
 #ifndef NMWEXCEPTION_H
     #define NMWEXCEPTION_H
 
-    #include "msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/cstring"  /* IWYU pragma: export */
+    #include "msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/cstring"  /* IWYU pragma: export */
     #include "runtime.ppceabi.h/__ppc_eabi_linker.h"
     #include "msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/size_t.h"  /* IWYU pragma: export */
 

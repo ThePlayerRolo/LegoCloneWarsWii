@@ -259,6 +259,15 @@ config.libs = [
         "objects": [
             Object(Matching, "TRK_Hollywood_Revolution/metrotrk/metrotrk/target_options.cpp"),
         ]
+    },
+    {
+        "lib": "RVL_SDK",
+        "mw_version": config.linker_version,
+        "cflags": cflags_runtime,
+        "progress_category": "sdk",
+        "objects": [
+            Object(NonMatching, "os/__start.c", extra_cflags=["-O4,p"]),
+        ]
     }
 ]
 
@@ -285,7 +294,8 @@ def link_order_callback(module_id: int, objects: List[str]) -> List[str]:
 config.progress_categories = [
     ProgressCategory("game", "Game Code"),
     ProgressCategory("runtime", "Runtime Code"),
-    ProgressCategory("trk", "MetroTRK Code")
+    ProgressCategory("trk", "MetroTRK Code"),
+    ProgressCategory("sdk", "RVL_SDK Code")
 ]
 config.progress_each_module = args.verbose
 # Optional extra arguments to `objdiff-cli report generate`
