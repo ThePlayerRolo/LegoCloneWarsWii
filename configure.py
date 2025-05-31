@@ -222,7 +222,7 @@ cflags_runtime = [
 
 cflags_sdk = [
     *cflags_base,
-    "-use_lmw_stmw on",
+    "-use_lmw_stmw off",
     "-str reuse,pool",
     "-gccinc",
     "-common off",
@@ -301,7 +301,7 @@ config.libs = [
             Object(NonMatching, "os/OSSemaphore.c", extra_cflags=["-O4,p"]),
             Object(NonMatching, "os/OSSync.c", extra_cflags=["-O4,p"]),
             Object(NonMatching, "os/OSThread.c", extra_cflags=["-O4,p"]),
-            Object(NonMatching, "os/OSTime.c", extra_cflags=["-O4,p"]),
+            Object(Matching, "os/OSTime.c", extra_cflags=["-O4,p"]),
             Object(NonMatching, "os/OSUtf.c", extra_cflags=["-O4,p"]),
             Object(NonMatching, "os/OSIpc.c", extra_cflags=["-O4,p"]),
             Object(NonMatching, "os/OSStateTM.c", extra_cflags=["-O4,p"]),
