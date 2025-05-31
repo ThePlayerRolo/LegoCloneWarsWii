@@ -322,9 +322,9 @@ asm void LCStoreBlocks(register void* dst, register const void* src,
 }
 
 
-//unused
+//TODO: actually finish function
 u32 LCLoadData(){
-    
+
 
 }
 
