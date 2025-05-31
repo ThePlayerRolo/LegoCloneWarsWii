@@ -1,3 +1,4 @@
+/* Orignally from RB3 */
 #include <revolution/OS.h>
 
 static void* __OSArenaLo = (void*)-1;
