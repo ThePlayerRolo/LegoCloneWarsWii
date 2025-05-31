@@ -11,6 +11,7 @@
 
     void OSInitSemaphore(OSSemaphore* sema, s32 active_signals);
     s32 OSWaitSemaphore(OSSemaphore* sema);
+    s32 OSTryWaitSemaphore(OSSemaphore* sema);
     s32 OSSignalSemaphore(OSSemaphore* sema);
 
 #endif
