@@ -223,7 +223,7 @@ cflags_runtime = [
 cflags_sdk = [
     *cflags_base,
     "-use_lmw_stmw off",
-    "-str reuse,pool",
+    "-str reuse",
     "-gccinc",
     "-common off",
     "-inline auto",
@@ -286,7 +286,7 @@ config.libs = [
             Object(NonMatching, "os/OSAudioSystem.c", extra_cflags=["-O4,p"]),
             Object(NonMatching, "os/OSCache.c", extra_cflags=["-O4,p"]),
             Object(NonMatching, "os/OSContext.c", extra_cflags=["-O4,p"]),
-            Object(NonMatching, "os/OSError.c", extra_cflags=["-O4,p"]),
+            Object(Matching, "os/OSError.c", extra_cflags=["-O4,p"]),
             Object(NonMatching, "os/OSExec.c", extra_cflags=["-O4,p"]),
             Object(NonMatching, "os/OSFatal.c", extra_cflags=["-O4,p"]),
             Object(NonMatching, "os/OSFont.c", extra_cflags=["-O4,p"]),
@@ -313,7 +313,7 @@ config.libs = [
             Object(NonMatching, "os/OSCrc.c", extra_cflags=["-O4,p"]),
             Object(NonMatching, "os/OSLaunch.c", extra_cflags=["-O4,p"]),
             Object(NonMatching, "nand/nand.c", extra_cflags=["-O4,p"]),
-            Object(NonMatching, "nand/NANDCheck.c", extra_cflags=["-O4,p"]),
+            Object(Matching, "nand/NANDCheck.c", extra_cflags=["-O4,p"]),
             Object(Matching, "base/PPCArch.c", extra_cflags=["-O4,p"]),
         ]
     }
