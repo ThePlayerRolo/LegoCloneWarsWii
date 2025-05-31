@@ -312,6 +312,7 @@ config.libs = [
             Object(NonMatching, "os/OSPlayTime.c", extra_cflags=["-O4,p"]),
             Object(NonMatching, "os/OSCrc.c", extra_cflags=["-O4,p"]),
             Object(NonMatching, "os/OSLaunch.c", extra_cflags=["-O4,p"]),
+            Object(NonMatching, "nand/nand.c", extra_cflags=["-O4,p"]),
         ]
     }
 ]
