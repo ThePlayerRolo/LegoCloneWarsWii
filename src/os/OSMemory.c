@@ -7,7 +7,7 @@ static OSShutdownFunctionInfo ShutdownFunctionInfo = {OnShutdown, 127, NULL,
 
 
 
-inline u32 OSGetPhysicalMem1Size(void) {
+u32 OSGetPhysicalMem1Size(void) {
     return OS_PHYSICAL_MEM1_SIZE;
 }
 

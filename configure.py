@@ -296,7 +296,7 @@ config.libs = [
             Object(Matching, "os/OSError.c"),
             Object(NonMatching, "os/OSExec.c"),
             Object(NonMatching, "os/OSFatal.c"),
-            Object(NonMatching, "os/OSFont.c"),
+            Object(Matching, "os/OSFont.c"),
             Object(NonMatching, "os/OSInterrupt.c"),
             Object(Matching, "os/OSLink.c"),
             Object(NonMatching, "os/OSMessage.c"),

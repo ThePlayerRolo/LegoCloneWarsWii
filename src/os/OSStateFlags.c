@@ -5,7 +5,7 @@
 
 static OSStateFlags StateFlags ALIGN(32);
 
-inline static u32 CheckSum(const OSStateFlags* state) {
+static u32 CheckSum(const OSStateFlags* state) {
     int i;
     const u32* ptr = (const u32*)&state->BYTE_0x4;
     u32 checksum = 0;

@@ -23,7 +23,7 @@ static void* ArenaStart = NULL;
 static s32 NumHeaps = 0;
 static OSHeapDescriptor* HeapArray = NULL;
 
-inline static OSHeapCell* DLAddFront(OSHeapCell* list, OSHeapCell* child) {
+static OSHeapCell* DLAddFront(OSHeapCell* list, OSHeapCell* child) {
     child->next = list;
     child->prev = NULL;
 
@@ -34,7 +34,7 @@ inline static OSHeapCell* DLAddFront(OSHeapCell* list, OSHeapCell* child) {
     return child;
 }
 
-inline static OSHeapCell* DLExtract(OSHeapCell* list, OSHeapCell* child) {
+static OSHeapCell* DLExtract(OSHeapCell* list, OSHeapCell* child) {
     if (child->next != NULL) {
         child->next->prev = child->prev;
     }

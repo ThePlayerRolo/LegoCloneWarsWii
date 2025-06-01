@@ -15,7 +15,7 @@ void OSReport(const char* msg, ...) {
     va_end(list);
 }
 
-inline void OSVReport(const char* msg, va_list arg){
+void OSVReport(const char* msg, va_list arg){
     vprintf(msg,arg);
 }
 

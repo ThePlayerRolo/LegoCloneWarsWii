@@ -365,7 +365,7 @@ _start:
 
 
 
-inline static void L2Init(void) {
+static void L2Init(void) {
     u32 msr;
 
     msr = PPCMfmsr();
@@ -378,12 +378,12 @@ inline static void L2Init(void) {
     PPCMtmsr(msr);
 }
 
-inline void L2Enable(void) {
+void L2Enable(void) {
     u32 l2cr = PPCMfl2cr();
     PPCMtl2cr((l2cr | L2CR_L2E) & ~L2CR_L2I);
 }
 
-inline void L2Disable(void) {
+void L2Disable(void) {
     u32 l2cr;
 
     __sync();
@@ -392,7 +392,7 @@ inline void L2Disable(void) {
     __sync();
 }
 
-inline void L2GlobalInvalidate(void) {
+void L2GlobalInvalidate(void) {
     u32 l2cr;
 
     L2Disable();

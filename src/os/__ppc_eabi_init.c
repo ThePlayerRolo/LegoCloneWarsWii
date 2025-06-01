@@ -81,7 +81,7 @@ void __init_cpp(void) {
     }
 }
 
-inline void __fini_cpp(void) {
+void __fini_cpp(void) {
     funcptr_t* dtor;
 
     for (dtor = _dtors; *dtor != NULL; dtor++) {

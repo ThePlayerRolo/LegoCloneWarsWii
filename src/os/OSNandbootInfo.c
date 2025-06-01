@@ -2,7 +2,7 @@
 #include <revolution/OS.h>
 #include <revolution/NAND.h>
 
-inline static s32 CheckSum(s32* array){
+static s32 CheckSum(s32* array){
     s32* var_r8 = array + 1;
     s32 total = 0;
     s32 i;

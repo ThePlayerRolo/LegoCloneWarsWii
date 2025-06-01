@@ -69,22 +69,22 @@ s64 __OSTimeToSystemTime(s64 time) {
 
 
 
-inline static BOOL IsLeapYear(s32 year) {
+static BOOL IsLeapYear(s32 year) {
     return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
 }
 
-inline static s32 GetYearDays(s32 year, s32 mon) {
+ static s32 GetYearDays(s32 year, s32 mon) {
     return (IsLeapYear(year) ? LeapYearDays : YearDays)[mon];
 }
 
- inline static s32 GetLeapDays(s32 year) {
+  static s32 GetLeapDays(s32 year) {
     if (year < 1) {
         return 0;
     }
     return (year + 3) / 4 - (year - 1) / 100 + (year - 1) / 400;
 }
 
-inline static void GetDates(s32 days, OSCalendarTime* cal) {
+ static void GetDates(s32 days, OSCalendarTime* cal) {
     s32 year;
     s32 totalDays;
     s32* p_days;

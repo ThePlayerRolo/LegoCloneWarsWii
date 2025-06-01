@@ -11,7 +11,7 @@ static OSAlarmQueue AlarmQueue;
 static OSShutdownFunctionInfo ShutdownFunctionInfo = {OnReset, 0xFFFFFFFF, 0,
                                                       0};
 
-inline static void SetTimer(const OSAlarm* alarm) {
+static void SetTimer(const OSAlarm* alarm) {
     s64 timeLeft = alarm->end - __OSGetSystemTime();
 
     if (timeLeft < 0) {
@@ -35,7 +35,7 @@ void __OSInitAlarm(void) {
     }
 }
 
-inline void OSCreateAlarm(OSAlarm* alarm) {
+void OSCreateAlarm(OSAlarm* alarm) {
     alarm->handler = NULL;
     alarm->tag = 0;
 }
@@ -229,7 +229,7 @@ static asm void DecrementerExceptionHandler(register u8 type,
     // clang-format on
 }
 
-inline void OSSetAlarmTag(OSAlarm* alarm, u32 tag) {
+void OSSetAlarmTag(OSAlarm* alarm, u32 tag) {
     alarm->tag = tag;
 }
 
@@ -256,7 +256,7 @@ static BOOL OnReset(BOOL final, u32 event) {
     return TRUE;
 }
 
-inline void OSSetAlarmUserData(OSAlarm* alarm, void* userData) {
+void OSSetAlarmUserData(OSAlarm* alarm, void* userData) {
     alarm->userData = userData;
 }
 

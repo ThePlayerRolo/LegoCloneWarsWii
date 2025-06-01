@@ -1,3 +1,4 @@
+/* Originally from RB3*/
 #include <revolution/os/OSCrc.h>
 
 u32 OSCalcCRC32(const void *buf, u32 length) {
