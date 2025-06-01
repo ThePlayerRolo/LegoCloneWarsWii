@@ -284,6 +284,7 @@ config.libs = [
         "cflags": cflags_sdk,
         "progress_category": "sdk",
         "objects": [
+            # OS
             Object(Matching, "os/__ppc_eabi_init.c"),
             Object(Matching, "os/__start.c"),
             Object(NonMatching, "os/OS.c"),
@@ -319,9 +320,13 @@ config.libs = [
             Object(NonMatching, "os/OSPlayTime.c"),
             Object(NonMatching, "os/OSCrc.c"),
             Object(NonMatching, "os/OSLaunch.c"),
+            # NAND
             Object(NonMatching, "nand/nand.c"),
             Object(Matching, "nand/NANDCheck.c"),
+            # BASE
             Object(Matching, "base/PPCArch.c"),
+            # MEM
+            Object(Matching, "mem/mem_allocator.c"),
         ]
     }
 ]
