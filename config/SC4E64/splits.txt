@@ -3065,7 +3065,7 @@ msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/Src/secure_error.
 	.text       start:0x8080AECC end:0x8080AEE4
 	.sbss       start:0x808C6900 end:0x808C6908
 
-msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Src/math_sun.cpp:
+msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Src/math_sun.c:
 	.text       start:0x8080AEE4 end:0x8080AF24
 
 msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Math/Double_precision/e_exp.cpp:

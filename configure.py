@@ -321,6 +321,8 @@ config.libs = [
             Object(Matching, "base/PPCArch.c"),
             # MEM
             Object(Matching, "mem/mem_allocator.c"),
+            # AI
+            Object(Matching, "ai/ai.c"),
         ]
     },
     {
@@ -331,7 +333,7 @@ config.libs = [
         ],
         "progress_category": "msl",
         "objects": [
-            Object(Matching, "msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Src/math_sun.cpp")
+            Object(Matching, "msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Src/math_sun.c")
         ]
     }
 ]
