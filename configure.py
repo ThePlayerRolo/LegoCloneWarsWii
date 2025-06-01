@@ -210,37 +210,6 @@ if args.debug:
 else:
     cflags_base.append("-DNDEBUG=1")
 
-# Metrowerks library flags
-cflags_runtime = [
-    *cflags_base,
-    "-use_lmw_stmw on",
-    "-str reuse,pool,readonly",
-    "-gccinc",
-    "-common off",
-    "-inline auto",
-    "-lang=c99",
-]
-
-cflags_trk = [
-    *cflags_base,
-    "-use_lmw_stmw on",
-    "-str reuse,pool,readonly",
-    "-gccinc",
-    "-common off",
-    "-inline auto",
-    "-lang=c99",
-]
-
-cflags_sdk = [
-    *cflags_base,
-    "-use_lmw_stmw off",
-    "-str reuse",
-    "-gccinc",
-    "-common off",
-    "-inline auto",
-    "-O4,p",
-    "-lang=c99",
-]
 config.linker_version = "Wii/1.0"
 
 
@@ -255,7 +224,15 @@ config.libs = [
     {
         "lib": "Runtime.PPCEABI.H",
         "mw_version": config.linker_version,
-        "cflags": cflags_runtime,
+        "cflags": [
+            *cflags_base,
+            "-use_lmw_stmw on",
+            "-str reuse,pool,readonly",
+            "-gccinc",
+            "-common off",
+            "-inline auto",
+            "-lang=c99",
+        ],
         "progress_category": "runtime",
         "objects": [
             Object(Matching, "runtime.ppceabi.h/global_destructor_chain.c",  extra_cflags=["-O4"]),
@@ -272,7 +249,15 @@ config.libs = [
     {
         "lib": "TRK_Hollywood_Revolution",
         "mw_version": config.linker_version,
-        "cflags": cflags_trk,
+        "cflags": [
+            *cflags_base,
+            "-use_lmw_stmw on",
+            "-str reuse,pool,readonly",
+            "-gccinc",
+            "-common off",
+            "-inline auto",
+            "-lang=c99",
+        ],
         "progress_category": "trk",
         "objects": [
             Object(Matching, "TRK_Hollywood_Revolution/metrotrk/metrotrk/target_options.cpp"),
@@ -281,7 +266,16 @@ config.libs = [
     {
         "lib": "RVL_SDK",
         "mw_version": config.linker_version,
-        "cflags": cflags_sdk,
+        "cflags": [
+            *cflags_base,
+            "-use_lmw_stmw off",
+            "-str reuse",
+            "-gccinc",
+            "-common off",
+            "-inline auto",
+            "-O4,p",
+            "-lang=c99",
+        ],
         "progress_category": "sdk",
         "objects": [
             # OS
@@ -328,6 +322,17 @@ config.libs = [
             # MEM
             Object(Matching, "mem/mem_allocator.c"),
         ]
+    },
+    {
+        "lib": "MSL",
+        "mw_version": config.linker_version,
+        "cflags": [
+            *cflags_base,
+        ],
+        "progress_category": "msl",
+        "objects": [
+            Object(Matching, "msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Src/math_sun.cpp")
+        ]
     }
 ]
 
@@ -355,7 +360,8 @@ config.progress_categories = [
     ProgressCategory("game", "Game Code"),
     ProgressCategory("runtime", "Runtime Code"),
     ProgressCategory("trk", "MetroTRK Code"),
-    ProgressCategory("sdk", "RVL_SDK Code")
+    ProgressCategory("sdk", "RVL_SDK Code"),
+    ProgressCategory("msl", "MSL Code"),
 ]
 config.progress_each_module = args.verbose
 # Optional extra arguments to `objdiff-cli report generate`
