@@ -285,7 +285,7 @@ config.libs = [
         "progress_category": "sdk",
         "objects": [
             Object(Matching, "os/__ppc_eabi_init.c"),
-            Object(NonMatching, "os/__start.c"),
+            Object(Matching, "os/__start.c"),
             Object(NonMatching, "os/OS.c"),
             Object(Matching, "os/OSAlarm.c"),
             Object(Matching, "os/OSAlloc.c"),

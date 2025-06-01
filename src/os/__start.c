@@ -1,17 +1,18 @@
 #include "Revolution/DB.h"
 #include "Revolution/DVD.h"
 #include "Revolution/OS.h"
+#include "compiler_macros.h"
 #include "msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/string.h"
 #include "Revolution/OS/__ppc_eabi_init.h"
 
 int main(int argc, char** argv);
 void InitMetroTRK_BBA();
 
-static u8 Debug_BBA;
+u8 Debug_BBA;
 extern void* InitMetroTRK;
 
-DECL_SECTION(".init") static void __init_registers(void);
-DECL_SECTION(".init") static void __init_data(void);
+DECL_SECTION(".init") void __init_registers(void);
+DECL_SECTION(".init") void __init_data(void);
 
 DECL_SECTION(".init") void __check_pad3(void) {
     if ((OS_GC_PAD_3_BTN & 0x0EEF) == 0x0EEF) {
@@ -19,15 +20,15 @@ DECL_SECTION(".init") void __check_pad3(void) {
     }
 }
 
-DECL_SECTION(".init") static void __set_debug_bba(void) {
+DECL_SECTION(".init") void __set_debug_bba(void) {
     Debug_BBA = TRUE;
 }
 
-DECL_SECTION(".init") static BOOL __get_debug_bba(void) {
+DECL_SECTION(".init") BOOL __get_debug_bba(void) {
     return Debug_BBA;
 }
 
-DECL_SECTION(".init") DECL_WEAK asm void __start(void) {
+DECL_SECTION(".init") asm void __start(void) {
     // clang-format off
     #ifdef __MWERKS__
     nofralloc
@@ -303,7 +304,7 @@ _after_init_metro_trk_bba:
 //     memset(dst, 0, size);
 // }
 
-DECL_SECTION(".init") static asm void __init_registers(void) {
+DECL_SECTION(".init") asm void __init_registers(void) {
     // clang-format off
     #ifdef __MWERKS__
     nofralloc
@@ -350,7 +351,7 @@ DECL_SECTION(".init") static asm void __init_registers(void) {
     // clang-format on
 }
 
-// DECL_SECTION(".init") static void __init_data(void) {
+// DECL_SECTION(".init") void __init_data(void) {
 //     const RomSection* rs;
 //     const BssSection* bs;
 
@@ -375,8 +376,34 @@ DECL_SECTION(".init") static asm void __init_registers(void) {
 //     }
 // }
 
+DECL_SECTION(".init") asm void __my_flush_cache(void)
+{
+    // clang-format off
+    #ifdef __MWERKS__
+    cmplwi    r4,0
+    blelr
+    clrlwi    r5,r3,27
+    add       r4,r4,r5
+    addi      r4,r4,0x1F
+    srwi      r4,r4,5
+    mtctr     r4
+_flush_cache_loop:
+    dcbf      r0,r3
+    addi      r3,r3,0x20
+    bdnz      _flush_cache_loop
+    mfspr     r6,HID0
+    ori       r7,r6,0x8
+    mtspr     HID0,r7
+    isync
+    sync
+    mtspr     HID0,r6
+    blr
+    #endif
+    // clang-format on
+}
+
 // TODO: try to match without assembly and without __copy_rom_section and __init_bss_section
-DECL_SECTION(".init") static asm void __init_data(void) {
+DECL_SECTION(".init") asm void __init_data(void) {
     // clang-format off
     #ifdef __MWERKS__
     stwu    r1,-0x20(r1)
@@ -409,13 +436,18 @@ _assign_bss:
     lis     r29,_bss_init_info@ha
     addi    r29,r29,_bss_init_info@l
 _bss_loop:
-    lwz     r5,4(r29)
-    cmpwi   r5,0
+    lwz     r30,4(r29)
+    cmpwi   r30,0
     beq     _cleanup
-    lwz     r3,0(r29)
+    lwz     r31,0(r29)
     beq     _bss_increment
+    mr      r3,r31
+    mr      r5,r30
     li      r4,0
     bl      memset
+    mr      r3,r31
+    mr      r4,r30
+    bl      __my_flush_cache
 _bss_increment:
     addi    r29,r29,8
     b       _bss_loop
