@@ -325,6 +325,7 @@ config.libs = [
             Object(Matching, "ai/ai.c"),
             # AX
             Object(NonMatching, "ax/AX.c"),
+            Object(Matching, "ax/AXComp.c"),
             Object(Matching, "ax/DSPCode.c"),
         ]
     },
