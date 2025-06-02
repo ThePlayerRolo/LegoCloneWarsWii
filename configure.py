@@ -323,6 +323,8 @@ config.libs = [
             Object(Matching, "mem/mem_allocator.c"),
             # AI
             Object(Matching, "ai/ai.c"),
+            # AX
+            Object(Matching, "ax/DSPCode.c"),
         ]
     },
     {
