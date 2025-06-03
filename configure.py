@@ -278,6 +278,19 @@ config.libs = [
         ],
         "progress_category": "sdk",
         "objects": [
+            # AI
+            Object(Matching, "ai/ai.c"),
+            # AX
+            Object(NonMatching, "ax/AX.c"),
+            Object(Matching, "ax/AXComp.c"),
+            Object(Matching, "ax/DSPCode.c"),
+            # BASE
+            Object(Matching, "base/PPCArch.c"),
+            # MEM
+            Object(Matching, "mem/mem_allocator.c"),
+            # NAND
+            Object(NonMatching, "nand/nand.c"),
+            Object(Matching, "nand/NANDCheck.c"),
             # OS
             Object(Matching, "os/__ppc_eabi_init.c"),
             Object(Matching, "os/__start.c"),
@@ -314,19 +327,8 @@ config.libs = [
             Object(NonMatching, "os/OSPlayTime.c"),
             Object(NonMatching, "os/OSCrc.c"),
             Object(NonMatching, "os/OSLaunch.c"),
-            # NAND
-            Object(NonMatching, "nand/nand.c"),
-            Object(Matching, "nand/NANDCheck.c"),
-            # BASE
-            Object(Matching, "base/PPCArch.c"),
-            # MEM
-            Object(Matching, "mem/mem_allocator.c"),
-            # AI
-            Object(Matching, "ai/ai.c"),
-            # AX
-            Object(NonMatching, "ax/AX.c"),
-            Object(Matching, "ax/AXComp.c"),
-            Object(Matching, "ax/DSPCode.c"),
+            # PAD
+            Object(Matching, "pad/Pad.c"),
         ]
     },
     {
