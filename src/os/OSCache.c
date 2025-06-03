@@ -187,7 +187,7 @@ asm void ICEnable(void) {
 
 
 
-static asm void __LCEnable(void) {
+asm void __LCEnable(void) {
     // clang-format off
     nofralloc
 
@@ -322,11 +322,25 @@ asm void LCStoreBlocks(register void* dst, register const void* src,
     // clang-format on
 }
 
+u32 LCLoadData(void* dst, const void* src, u32 len)
+{
+    u32 blocks = (len + 31) / 32;
+    u32 ret = (blocks + 127) / 128;
 
-//TODO: actually finish function
-u32 LCLoadData(){
+    while (blocks > 0) {
+        if (blocks < 128) {
+            LCLoadBlocks(dst, src, blocks);
+            blocks = 0;
+        } else {
+            LCLoadBlocks(dst, src, 0);
+            blocks -= 128;
 
+            dst = (u8*)dst + 0x1000;
+            src = (u8*)src + 0x1000;
+        }
+    }
 
+    return ret;
 }
 
 u32 LCStoreData(void* dst, const void* src, u32 len) {
@@ -365,7 +379,7 @@ _start:
 
 
 
-static void L2Init(void) {
+static inline void L2Init(void) {
     u32 msr;
 
     msr = PPCMfmsr();
@@ -378,12 +392,12 @@ static void L2Init(void) {
     PPCMtmsr(msr);
 }
 
-void L2Enable(void) {
+inline void L2Enable(void) {
     u32 l2cr = PPCMfl2cr();
     PPCMtl2cr((l2cr | L2CR_L2E) & ~L2CR_L2I);
 }
 
-void L2Disable(void) {
+inline void L2Disable(void) {
     u32 l2cr;
 
     __sync();
@@ -392,7 +406,7 @@ void L2Disable(void) {
     __sync();
 }
 
-void L2GlobalInvalidate(void) {
+inline void L2GlobalInvalidate(void) {
     u32 l2cr;
 
     L2Disable();
@@ -411,8 +425,6 @@ void L2GlobalInvalidate(void) {
     }
 }
 
-
-
 void DMAErrorHandler(u8 error, OSContext* ctx, u32 dsisr, u32 dar, ...) {
     u32 hid2 = PPCMfhid2();
 
@@ -430,8 +442,7 @@ void DMAErrorHandler(u8 error, OSContext* ctx, u32 dsisr, u32 dar, ...) {
     OSReport("The following errors have been detected and cleared :\n");
 
     if (hid2 & HID2_DCHERR) {
-        OSReport(
-            "\t- Requested a locked cache tag that was already in the cache\n");
+        OSReport("\t- Requested a locked cache tag that was already in the cache\n");
     }
     if (hid2 & HID2_DNCERR) {
         OSReport("\t- DMA attempted to access normal cache\n");
@@ -449,20 +460,16 @@ void DMAErrorHandler(u8 error, OSContext* ctx, u32 dsisr, u32 dar, ...) {
 void __OSCacheInit(void) {
     if (!(PPCMfhid0() & HID0_ICE)) {
         ICEnable();
-        //DBPrintf("L1 i-caches initialized\n");
     }
 
     if (!(PPCMfhid0() & HID0_DCE)) {
         DCEnable();
-        //DBPrintf("L1 d-caches initialized\n");
     }
 
     if (!(PPCMfl2cr() & L2CR_L2E)) {
         L2Init();
         L2Enable();
-        //DBPrintf("L2 cache initialized\n");
     }
 
     OSSetErrorHandler(OS_ERR_MACHINE_CHECK, DMAErrorHandler);
-    //DBPrintf("Locked cache machine check handler installed\n");
 }
