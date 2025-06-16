@@ -20,13 +20,13 @@ s32 OSWaitSemaphore(OSSemaphore *sema) {
     OSRestoreInterrupts(status);
     return ret;
 }
+
 s32 OSTryWaitSemaphore(OSSemaphore *sema) {
     BOOL status = OSDisableInterrupts();
-    s32 ret;
-    if (ret) {
-        ret = sema->activeSignals--;
+    s32 ret = sema->activeSignals;
+    if (ret > 0) {
+        sema->activeSignals = ret-1;
     }
-    
     OSRestoreInterrupts(status);
     return ret;
 }

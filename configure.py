@@ -312,7 +312,7 @@ config.libs = [
             Object(NonMatching, "os/OSMutex.c"),
             Object(Matching, "os/OSReboot.c"),
             Object(NonMatching, "os/OSReset.c"),
-            Object(NonMatching, "os/OSRtc.c"),
+            Object(Matching, "os/OSRtc.c", extra_cflags=["-ipa file"]),
             Object(NonMatching, "os/OSSemaphore.c"),
             Object(Matching, "os/OSSync.c"),
             Object(NonMatching, "os/OSThread.c"),
