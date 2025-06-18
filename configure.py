@@ -305,7 +305,7 @@ config.libs = [
             Object(Matching, "os/OSContext.c"),
             Object(Matching, "os/OSError.c"),
             Object(NonMatching, "os/OSExec.c"),
-            Object(NonMatching, "os/OSFatal.c"),
+            Object(NonMatching, "os/OSFatal.c", extra_cflags=["-ipa file"]),
             Object(Matching, "os/OSFont.c"),
             Object(NonMatching, "os/OSInterrupt.c"),
             Object(Matching, "os/OSLink.c"),
