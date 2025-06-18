@@ -319,7 +319,7 @@ config.libs = [
             Object(Matching, "os/OSTime.c"),
             Object(NonMatching, "os/OSUtf.c"),
             Object(Matching, "os/OSIpc.c"),
-            Object(NonMatching, "os/OSStateTM.c"),
+            Object(NonMatching, "os/OSStateTM.c", extra_cflags=["-ipa file"]),
             Object(NonMatching, "os/OSPlayRecord.c"),
             Object(Matching, "os/OSStateFlags.c"),
             Object(NonMatching, "os/OSNet.c"),
