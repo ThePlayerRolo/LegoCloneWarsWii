@@ -280,6 +280,8 @@ config.libs = [
         "objects": [
             # AI
             Object(Matching, "ai/ai.c"),
+            # ARC
+            Object(Matching, "arc/arc.c" , extra_cflags=["-ipa file"]),
             # AX
             Object(NonMatching, "ax/AX.c"),
             Object(Matching, "ax/AXComp.c"),
