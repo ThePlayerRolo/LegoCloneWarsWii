@@ -292,6 +292,7 @@ config.libs = [
             Object(Matching, "mem/mem_allocator.c"),
             # NAND
             Object(NonMatching, "nand/nand.c"),
+            Object(Matching, "nand/NANDOpenClose.c"),
             Object(Matching, "nand/NANDCheck.c"),
             # OS
             Object(Matching, "os/__ppc_eabi_init.c"),
