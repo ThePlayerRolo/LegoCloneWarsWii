@@ -60,7 +60,6 @@
 
     OSInterruptHandler __OSSetInterruptHandler(OSInterruptType type, OSInterruptHandler handler);
     OSInterruptHandler __OSGetInterruptHandler(OSInterruptType type);
-
     void __OSInterruptInit(void);
 
     u32 __OSMaskInterrupts(u32 userMask);
