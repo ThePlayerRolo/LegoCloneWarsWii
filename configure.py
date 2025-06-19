@@ -201,6 +201,7 @@ cflags_base = [
     f"-i build/{config.version}/include",
     f"-DBUILD_VERSION={version_num}",
     f"-DVERSION_{config.version}",
+    "-i src",
 ]
 
 # Debug flags
@@ -320,7 +321,7 @@ config.libs = [
             Object(Matching, "os/OSSync.c"),
             Object(NonMatching, "os/OSThread.c"),
             Object(Matching, "os/OSTime.c"),
-            Object(NonMatching, "os/OSUtf.c"),
+            Object(NonMatching, "os/OSUtf.c", extra_cflags=["-ipa file","-fp_contract off"]),
             Object(Matching, "os/OSIpc.c"),
             Object(NonMatching, "os/OSStateTM.c", extra_cflags=["-ipa file"]),
             Object(NonMatching, "os/OSPlayRecord.c"),
@@ -354,7 +355,9 @@ config.libs = [
         ],
         "progress_category": "game",
         "objects": [
-            Object(NonMatching, "legoapi.master/AIState.cpp")
+            Object(NonMatching, "legoapi.master/AIState.cpp"),
+            Object(NonMatching, "legoapi.master/AverageAttack.cpp"),
+            Object(NonMatching, "nufile.master/nufile_Lump.cpp")
         ]
     }
 ]
