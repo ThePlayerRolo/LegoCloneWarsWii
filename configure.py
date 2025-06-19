@@ -344,6 +344,18 @@ config.libs = [
         "objects": [
             Object(Matching, "msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Src/math_sun.c")
         ]
+    },
+    {
+        "lib": "Game Code",
+        "mw_version": config.linker_version,
+        "cflags": [
+            *cflags_base,
+            "-O4,s",
+        ],
+        "progress_category": "game",
+        "objects": [
+            Object(NonMatching, "legoapi.master/AIState.cpp")
+        ]
     }
 ]
 
