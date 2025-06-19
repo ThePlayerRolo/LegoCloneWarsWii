@@ -357,7 +357,9 @@ config.libs = [
         "objects": [
             Object(NonMatching, "legoapi.master/AIState.cpp"),
             Object(NonMatching, "legoapi.master/AverageAttack.cpp"),
-            Object(NonMatching, "nufile.master/nufile_Lump.cpp", extra_cflags=["-str reuse,pool,readonly"])
+            Object(NonMatching, "nufile.master/nufile_Lump.cpp", extra_cflags=["-str reuse,pool,readonly"]),
+            Object(NonMatching, "gameframework.master/gameframework_Lump.cpp", extra_cflags=["-str reuse,pool,readonly"]),
+
         ]
     }
 ]
