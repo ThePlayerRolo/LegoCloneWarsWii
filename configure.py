@@ -194,7 +194,6 @@ cflags_base = [
     "-maxerrors 1",
     "-nosyspath",
     "-RTTI off",
-    "-fp_contract on",
     "-str reuse",
     "-enc SJIS",
     "-i include",
@@ -202,6 +201,7 @@ cflags_base = [
     f"-DBUILD_VERSION={version_num}",
     f"-DVERSION_{config.version}",
     "-i src",
+    "-code_merging safe,aggressive"
 ]
 
 # Debug flags
@@ -211,7 +211,7 @@ if args.debug:
 else:
     cflags_base.append("-DNDEBUG=1")
 
-config.linker_version = "Wii/1.0"
+config.linker_version = "Wii/1.5"
 
 
 Matching = True                   # Object matches and should be linked
@@ -233,6 +233,7 @@ config.libs = [
             "-common off",
             "-inline auto",
             "-lang=c99",
+            "-fp_contract on",
         ],
         "progress_category": "runtime",
         "objects": [
@@ -258,6 +259,7 @@ config.libs = [
             "-common off",
             "-inline auto",
             "-lang=c99",
+            "-fp_contract on",
         ],
         "progress_category": "trk",
         "objects": [
@@ -276,6 +278,7 @@ config.libs = [
             "-inline auto",
             "-O4,p",
             "-lang=c99",
+            "-fp_contract on",
         ],
         "progress_category": "sdk",
         "objects": [
@@ -340,6 +343,7 @@ config.libs = [
         "mw_version": config.linker_version,
         "cflags": [
             *cflags_base,
+            "-fp_contract on",
         ],
         "progress_category": "msl",
         "objects": [
@@ -352,6 +356,8 @@ config.libs = [
         "cflags": [
             *cflags_base,
             "-O4,s",
+            "-fp_contract off",
+            '-pragma "merge_float_consts on"',
         ],
         "progress_category": "game",
         "objects": [
@@ -359,6 +365,7 @@ config.libs = [
             Object(NonMatching, "legoapi.master/AverageAttack.cpp"),
             Object(NonMatching, "nufile.master/nufile_Lump.cpp", extra_cflags=["-str reuse,pool,readonly"]),
             Object(NonMatching, "gameframework.master/gameframework_Lump.cpp", extra_cflags=["-str reuse,pool,readonly"]),
+            Object(NonMatching, "numath.master/numath_Lump.cpp", extra_cflags=["-str reuse,pool,readonly", "-ipa file"]),
 
         ]
     }
