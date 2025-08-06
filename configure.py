@@ -358,6 +358,7 @@ config.libs = [
             "-O4,s",
             "-fp_contract off",
             '-pragma "merge_float_consts on"',
+            "-use_lmw_stmw on",
         ],
         "progress_category": "game",
         "objects": [

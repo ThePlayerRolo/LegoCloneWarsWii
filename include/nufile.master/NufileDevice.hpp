@@ -2,12 +2,20 @@
 
 
 
+class NuFileDevice;
+
+struct FileDeviceDirectoryHandle {
+    NuFileDevice* unk0;
+    int unk4;
+};
+
 class NuFileDevice {
 public:
     NuFileDevice();
 
     ~NuFileDevice();
     virtual u32 GetPositionOnDisc(const char*, long long&) const;
+    int AllocDirectoryHandle(const char*);
     virtual void DirClose(int);
     void Interrogate();
 
@@ -23,4 +31,8 @@ public:
     u8 _2A;
     u32 _2C;
     u8 _30;
+
+    static u32 sm_Devices;
+    static int sm_CriticalSection;
+    static FileDeviceDirectoryHandle sm_DirectoryHandles[8]; 
 };
