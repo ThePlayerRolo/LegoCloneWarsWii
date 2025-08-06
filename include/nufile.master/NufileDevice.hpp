@@ -15,9 +15,10 @@ public:
 
     ~NuFileDevice();
     virtual u32 GetPositionOnDisc(const char*, long long&) const;
-    int AllocDirectoryHandle(const char*);
     virtual void DirClose(int);
+    int AllocDirectoryHandle(const char*);
     void Interrogate();
+    void AddDevice(NuFileDevice*);
 
     u32 _4;
     u32 _8;
@@ -32,7 +33,8 @@ public:
     u32 _2C;
     u8 _30;
 
-    static u32 sm_Devices;
+    static NuFileDevice* sm_Devices[3];    
+    static int sm_NumDevices; 
     static int sm_CriticalSection;
     static FileDeviceDirectoryHandle sm_DirectoryHandles[8]; 
 };

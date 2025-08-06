@@ -24,9 +24,7 @@ NuFileDevice::NuFileDevice() {
 }
 
 NuFileDevice::~NuFileDevice() {
-    if (_4) {
-        sm_Devices++;
-    }
+
 }
 
 u32 NuFileDevice::GetPositionOnDisc(const char*, long long&) const {
@@ -66,4 +64,9 @@ int NuFileDevice::AllocDirectoryHandle(const char* param1) {
     NuThreadCriticalSectionEnd(this->sm_CriticalSection);
 
     return iVar3;
+}
+
+void NuFileDevice::AddDevice(NuFileDevice* fileDevice) {
+    this->_4 = sm_NumDevices;
+    fileDevice->sm_Devices[sm_NumDevices++] = this;
 }
