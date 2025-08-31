@@ -1,10 +1,11 @@
+#include "macros.h"
+#include "msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/null_def.h"
 #include "types.h"
-
+#include "numath.master/NuRand.hpp"
 
 static unsigned int fseed;
 //Todo: Figure out what generates floatbase0.
 static float floatBase0;
-
 
 
 
@@ -44,4 +45,20 @@ unsigned int NuRandInt() {
 
 unsigned int NuRandIntInRange(unsigned int param_1, unsigned int param_2) {
     return param_1 + (unsigned int)((param_2 - param_1)*NuRandFloat());
+}
+
+void NuRandSetSeed(nunrand_s* param_1, int param_2) {
+    if (param_1 == nullptr) {
+        param_1 = &global_rand;
+    }
+    param_1->unk0 = param_2;
+}
+
+void NuRand(nunrand_s* param_1) {
+    if (param_1 == nullptr) {
+        param_1 = &global_rand;
+    } else {
+        param_1->unk0 = 1;
+    }
+    u32 uVar2 = param_1->unk0 ^  0x75bd924;
 }

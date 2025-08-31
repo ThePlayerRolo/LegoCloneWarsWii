@@ -9,6 +9,10 @@ struct FileDeviceDirectoryHandle {
     int unk4;
 };
 
+struct NuFileDeviceType {
+    u32 unk0;
+};
+
 class NuFileDevice {
 public:
     NuFileDevice();
@@ -19,6 +23,7 @@ public:
     int AllocDirectoryHandle(const char*);
     void Interrogate();
     void AddDevice(NuFileDevice*);
+    void SetDefaultDevice(NuFileDeviceType);
 
     u32 _4;
     u32 _8;

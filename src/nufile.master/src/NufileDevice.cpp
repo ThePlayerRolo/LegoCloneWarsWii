@@ -70,3 +70,13 @@ void NuFileDevice::AddDevice(NuFileDevice* fileDevice) {
     this->_4 = sm_NumDevices;
     fileDevice->sm_Devices[sm_NumDevices++] = this;
 }
+
+void NuFileDevice::SetDefaultDevice(NuFileDeviceType deviceType) {
+    if (!sm_NumDevices) return;
+    int iVar2 = 0;
+    NuFileDevice* iVar3;
+    for (iVar3 = sm_Devices[iVar2]; iVar3 == 0 || this != iVar3; iVar2 += 4) {
+        sm_NumDevices--;
+        if (sm_NumDevices < 1) return;
+    }
+}
