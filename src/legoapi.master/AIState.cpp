@@ -1,9 +1,9 @@
 #include "legoapi.master/AIState.hpp"
 
 AIState::AIState() {
-    _4 = 0;
+    _4 = NULL;
     _8 = 0.0f;
-    _C = 0;
+    _C = false;
 }
 
 AIState::~AIState() {

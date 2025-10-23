@@ -17,7 +17,7 @@ public:
     virtual void Exit(AIState*, AIManager&, ScriptProcessor*, AIPACKET*);
     virtual void CheckConditions(AIState*, AIManager&, ScriptProcessor*, AIPACKET*);
     virtual void GetTypeID();
-    int _4;
+    AIState* _4;
     f32 _8;
     u8 _C;
 };
