@@ -336,6 +336,7 @@ config.libs = [
             Object(NonMatching, "os/OSLaunch.c"),
             # PAD
             Object(Matching, "pad/Pad.c"),
+            Object(NonMatching, "mtx/mtxvec.c"),
         ]
     },
     {
@@ -348,6 +349,25 @@ config.libs = [
         "progress_category": "msl",
         "objects": [
             Object(Matching, "msl_c.ppceabi.bare.h/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Src/math_sun.c")
+        ]
+    },
+    {
+        "lib": "Nu Library Code",
+        "mw_version": config.linker_version,
+        "cflags": [
+            *cflags_base,
+            "-O4,s",
+            "-fp_contract off",
+            '-pragma "merge_float_consts on"',
+            "-use_lmw_stmw on",
+            "-str reuse,pool,readonly",
+            "-fp_contract on"
+        ],
+        "progress_category": "nulib",
+        "objects": [
+            Object(NonMatching, "nufile.master/nufile_Lump.cpp"),
+            Object(NonMatching, "numath.master/numath_Lump.cpp", extra_cflags=["-ipa file"]),
+
         ]
     },
     {
@@ -364,9 +384,7 @@ config.libs = [
         "objects": [
             Object(NonMatching, "legoapi.master/AIState.cpp"),
             Object(NonMatching, "legoapi.master/AverageAttack.cpp"),
-            Object(NonMatching, "nufile.master/nufile_Lump.cpp", extra_cflags=["-str reuse,pool,readonly"]),
             Object(NonMatching, "gameframework.master/gameframework_Lump.cpp", extra_cflags=["-str reuse,pool,readonly"]),
-            Object(NonMatching, "numath.master/numath_Lump.cpp", extra_cflags=["-str reuse,pool,readonly", "-ipa file"]),
 
         ]
     }
@@ -398,6 +416,8 @@ config.progress_categories = [
     ProgressCategory("trk", "MetroTRK Code"),
     ProgressCategory("sdk", "RVL_SDK Code"),
     ProgressCategory("msl", "MSL Code"),
+    ProgressCategory("nulib", "Nu Library Code"),
+
 ]
 config.progress_each_module = args.verbose
 # Optional extra arguments to `objdiff-cli report generate`

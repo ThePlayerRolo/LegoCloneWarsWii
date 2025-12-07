@@ -41,8 +41,6 @@ unsigned int NuRandInt() {
     return NuRandIntSeeded(&fseed);    
 }
 
-
-
 unsigned int NuRandIntInRange(unsigned int param_1, unsigned int param_2) {
     return param_1 + (unsigned int)((param_2 - param_1)*NuRandFloat());
 }

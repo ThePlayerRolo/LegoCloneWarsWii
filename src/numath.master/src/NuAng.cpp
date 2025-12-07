@@ -1,9 +1,5 @@
 #include "types.h"
 
-
-
-
-
 int NuAngWrap(int param1) {
     for (; 0x8000 < param1; param1 -= 0x10000) {
     }

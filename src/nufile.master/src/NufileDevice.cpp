@@ -80,3 +80,7 @@ void NuFileDevice::SetDefaultDevice(NuFileDeviceType deviceType) {
         if (sm_NumDevices < 1) return;
     }
 }
+
+void NuFileDevice::getDeviceByType(NuFileDeviceType deviceType) {
+    
+}

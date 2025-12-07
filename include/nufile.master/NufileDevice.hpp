@@ -24,7 +24,7 @@ public:
     void Interrogate();
     void AddDevice(NuFileDevice*);
     void SetDefaultDevice(NuFileDeviceType);
-
+    void getDeviceByType(NuFileDeviceType);
     u32 _4;
     u32 _8;
     u32 _C;
@@ -39,6 +39,7 @@ public:
     u8 _30;
 
     static NuFileDevice* sm_Devices[3];    
+    static NuFileDevice* sm_DefaultDevice;
     static int sm_NumDevices; 
     static int sm_CriticalSection;
     static FileDeviceDirectoryHandle sm_DirectoryHandles[8]; 
